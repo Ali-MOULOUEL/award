@@ -1,0 +1,6 @@
+#SensorMsgHeader SignalStatus field
+uint8 SIGNALSTATUS_EM_SIGSTATE_INIT = 0
+uint8 SIGNALSTATUS_EM_SIGSTATE_OK = 1
+uint8 SIGNALSTATUS_EM_SIGSTATE_INVALID = 2
+
+uint8 SignalStatus

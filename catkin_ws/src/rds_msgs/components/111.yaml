@@ -1,0 +1,15 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  # removed, do not reuse
+  #
+  # service_already_running: 1
+  # service_not_running: 2
+  system_service_required:
+    id: 3
+    msg: "the system service is required"
+  driving_service_running:
+    id: 4
+    msg: "a running service is preventing this action"

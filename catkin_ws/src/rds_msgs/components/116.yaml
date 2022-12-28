@@ -1,0 +1,20 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  not_enough_points:
+    id: 1
+    msg: "model requires more points to be estimated"
+  sampling_failed:
+    id: 2
+    msg: "need more points to sample correctly"
+  model_validation_failed:
+    id: 3
+    msg: "validation functor failed to validate the estimated model"
+  inlier_ratio_too_low:
+    id: 4
+    msg: "inlier ratio is too low"
+  distance_error_too_high:
+    id: 5
+    msg: "distance threshold too high to estimate a model"

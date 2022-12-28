@@ -1,0 +1,61 @@
+must_fill_categories: false
+errors:
+  # 0 success
+  abnormal_termination:
+    id: 1
+    msg: "unexpected termination"
+  canceled:
+    id: 2
+    msg: "mission canceled"
+  invalid_command:
+    id: 3
+    msg: "command not valid"
+  unsupported_command:
+    id: 4
+    msg: "command not supported"
+  close_doors_failure:
+    id: 5
+    msg: "close doors action failed"
+  open_doors_failure:
+    id: 6
+    msg: "open doors action failed"
+  manual_mode:
+    id: 7
+    msg: "manual mode activated"
+    categories: [common.manual]
+  navigation_disabled:
+    id: 8
+    msg: "navigation disabled"
+  # Deprecate Mission::emergency. Nowadays use error_condition::Emergency
+  # against error from low-level.
+  # Do not reuse these ids
+  #
+  # emergency_unknown: 9
+  # emergency_user: 10
+  # emergency_safety_chain: 11
+  # emergency_software: 12
+  dump_log_failure:
+    id: 13
+    msg: "dump log action failed"
+  preempted:
+    id: 14
+    msg: "mission preempted"
+  impossible:
+    id: 15
+    msg: "mission not applicable"
+  remote_emergency_stop:
+    id: 16
+    msg: "remote emergency stop required"
+    categories: [emergency.software]
+  wifi_enabled:
+    id: 17
+    msg: "WiFi connection is active : waiting automatic deactivation"
+  not_connected_to_sitecc:
+    id: 18
+    msg: "Vehicle does not seem connected to any supervision service"
+  vehicle_too_far_from_charging_station:
+    id: 19
+    msg: "Vehicle is too far from charging station"
+  ezdrive_not_ready:
+    id: 20
+    msg: "EZDrive system is not ready"

@@ -1,0 +1,132 @@
+must_fill_categories: false
+errors:
+  success:
+    id: 0
+    msg: "success"
+  emergency_stop_prediction_outlier:
+    id: 1
+    msg: "emergency stop engaged due to prediction outlier"
+    categories: [software_error.fatal_site, emergency.software]
+  emergency_stop_prediction_timeout:
+    id: 2
+    msg: "emergency stop engaged due to prediction timeout"
+    categories: [emergency.software]
+  lotus_init_fail_because_vehicle_moved:
+    id: 3
+    msg: "vehicle moved during lotus initialization causing failure of lotus"
+  lotus_init_failed_to_converge:
+    id: 4
+    msg: "lotus initialization failed to converge"
+    categories: [localization_modality.convergence]
+  lotus_init_fail_waiting_initial_pose:
+    id: 5
+    msg: "timeout reached but no initial pose (GPS) received in lotus initialization"
+  lotus_init_fail_waiting_accurate_initial_pose:
+    id: 6
+    msg: "timeout reached but no *accurate* initial pose (GPS) received in lotus initialization"
+  lotus_init_fail_ungeoreferenced_map:
+    id: 7
+    msg: "the map used for auto init must be georeferenced"
+    categories: [localization_modality.fatal]
+  lotus_init_fail_rectification_map:
+    id: 8
+    msg: "the 3D settings of the loaded map do not match the settings expected by EZDrive"
+    categories: [localization_modality.fatal]
+  lotus_init_fail_convergence_ambiguity:
+    id: 9
+    msg: "lotus initialization failed due to a convergence ambiguity"
+    categories: [localization_modality.convergence]
+  emergency_stop_fusion_invalid_data:
+    id: 10
+    msg: "emergency stop engaged due to invalid data in fusion"
+    categories: [software_error.fatal_site, emergency.software]
+  fusion_observation_outlier:
+    id: 11
+    msg: "fusion had an observation large outlier"
+  lotus_init_fail_waiting_init_request:
+    id: 12
+    msg: "timeout reached but no initial poses received from manager"
+  lotus_initialization_ongoing:
+    id: 13
+    msg: "lotus initialization ongoing"
+  lotus_already_initialized:
+    id: 14
+    msg: "lotus already initialized"
+  lotus_no_initialization_positions:
+    id: 15
+    msg: "lotus did not receive any initialization positions"
+    categories: [localization_modality.fatal]
+  manager_incomplete_modality_initialization:
+    id: 16
+    msg: "incomplete modality initialization"
+  manager_no_modality_initialized:
+    id: 17
+    msg: "no modality could be initialized"
+  manager_no_initialization_points_available:
+    id: 18
+    msg: "no initialization points available"
+  manager_init_fail_waiting_initial_poses:
+    id: 19
+    msg: "timeout reached and no initial pose (GPS) received for modality initialization"
+  manager_initialization_already_ongoing:
+    id: 20
+    msg: "localization initialization already ongoing"
+  manager_init_mode_not_supported:
+    id: 21
+    msg: "manager init mode not supported"
+  manager_no_modality_will_be_initialized:
+    id: 22
+    msg: "no modality will be initialized with the current configuration. Please check localization manager configuration (modalities to init) and localization features"
+  lotus_force_tf_initialization:
+    id: 23
+    msg: "cannot init lotus from request. Initialization must come from tf"
+  manager_no_modality_converged:
+    id: 24
+    msg: "no modality converged"
+  manager_no_modality_converged_auto:
+    id: 25
+    msg: "no modality could converge in Auto mode. Please move the vehicle to a place with more visible buildings and retry"
+  manager_no_modality_converged_params:
+    id: 26
+    msg: "no modality could converge in Params mode. Please move the vehicle closer to an init point and retry"
+  manager_no_modality_initialized_auto:
+    id: 27
+    msg: "no modality could be initialized in Auto mode. Check modality errors"
+  manager_no_modality_initialized_params:
+    id: 28
+    msg: "no modality could be initialized in Params mode. Check modality errors"
+  manager_modality_fatal_error:
+    id: 29
+    msg: "at least one modality reported a fatal error"
+  lotus_map_not_found:
+    id: 30
+    msg: "lotus map cannot be found"
+    categories: [localization_modality.fatal]
+  fusion_filter_reset_ongoing:
+    id: 31
+    msg: "fusion filter reset ongoing."
+  fusion_not_enough_sensors_to_initialize_filter:
+    id: 32
+    msg: "fusion does not have enough sensor set for its initialization"
+  fusion_observation_pose2_modality_model_not_declared:
+    id: 33
+    msg: "fusion does not have the observation pose2 modality model required for reset request"
+  manager_fusion_pose_incomplete_initialization:
+    id: 34
+    msg: "incomplete fusion_pose initialization. Request timeout"
+  manager_fusion_no_modality_pose_valid_to_init_fusion:
+    id: 35
+    msg: "no modality pose valid to initialize fusion"
+  prediction_sensor_invalid_frame:
+    id: 36
+    msg: "invalid frame in prediction sensor msg"
+  fusion_pose_continuous_velocity_too_uncertain:
+    id: 37
+    msg: "emergency stop engaged due to velocity uncertainty too large in fusion_pose_continuous state"
+    categories: [software_error.fatal_site, emergency.software]
+  manager_moved_since_last_localization_request_error:
+    id: 38
+    msg: "moved since last localization request error"
+  fusion_reset_request_canceled:
+    id: 39
+    msg: "fusion reset request canceled"

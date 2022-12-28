@@ -1,0 +1,23 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "The gui computer is ok"
+  down:
+    id: 1
+    msg: "The gui computer is down"
+  pending:
+    id: 2
+    msg: "The gui computer is in a pending state"
+  error:
+    id: 3
+    msg: "The gui computer is in error"
+  mismatch:
+    id: 4
+    msg: "The gui computer version has a mismatch"
+  transient:
+    id: 5
+    msg: "The gui computer is in a transient state"
+  recoverable:
+    id: 6
+    msg: "The gui computer is in a recoverable state"

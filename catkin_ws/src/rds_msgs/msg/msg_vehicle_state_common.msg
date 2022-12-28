@@ -1,0 +1,13 @@
+Header header
+
+drive_mode drive_mode
+
+motion motion
+emergency_stop_root_cause emergency_stop_root_causes
+error[] errors
+error[] warnings
+
+safety_chain_state safety_chain_state
+ability controller_status
+ability engagement_ability
+start_mission_state start_mission_state

@@ -1,0 +1,8 @@
+prefix=/home/project/award/catkin_ws/install
+
+Name: rds_navigation_msgs
+Description: Description of rds_navigation_msgs
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime actionlib_msgs geometry_msgs

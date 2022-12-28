@@ -1,0 +1,17 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  invalid_resolution:
+    id: 1
+    msg: "invalid image resolution detected in format"
+  invalid_format:
+    id: 2
+    msg: "invalid image format"
+  image_format:
+    id: 3
+    msg: "image format not supported"
+  image_resolution_cast:
+    id: 4
+    msg: "image resolution cast failed"

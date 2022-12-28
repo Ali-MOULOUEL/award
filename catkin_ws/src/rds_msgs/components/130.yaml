@@ -1,0 +1,11 @@
+must_fill_categories: false
+errors:
+  unexpected_answer:
+    id: 1
+    msg: "rdos_api: Unexpected answer"
+  synchronization_timeout:
+    id: 2
+    msg: "rdos_api: Timeout when trying to synchronize time"
+  no_time_server_available:
+    id: 3
+    msg: "rdos_api: No time server available"

@@ -1,0 +1,6 @@
+#Object kinematic state
+uint8 KINEMATICSTATE_RELATIVE = 0
+uint8 KINEMATICSTATE_ABSOLUTE = 1
+uint8 KINEMATICSTATE_RELATIVE_AND_ABSOLUTE = 2
+
+uint8 KinematicState

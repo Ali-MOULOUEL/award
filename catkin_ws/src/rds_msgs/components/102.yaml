@@ -1,0 +1,553 @@
+must_fill_categories: false
+errors:
+  # 0 success
+  soft_stop_unknown:
+    id: 1
+    msg: "soft stop: unknown"
+    mnemonic: "SOFT_STOP_UNKNOWN_CODE"
+    categories: [soft_stop.cco]
+  soft_stop_relay_fsb_f_ctrl_select:
+    id: 2
+    msg: "soft stop: relay fsb f ctrl select"
+    mnemonic: "s_PLC_Relay_FSB_F_Ctrl_Select"
+    categories: [soft_stop.cco]
+  soft_stop_relay_fsb_r_ctrl_select:
+    id: 3
+    msg: "soft stop: relay fsb r ctrl select"
+    mnemonic: "s_PLC_Relay_FSB_R_Ctrl_Select"
+    categories: [soft_stop.cco]
+  soft_stop_doors:
+    id: 4
+    msg: "soft stop: Doors open"
+    mnemonic: "s_PLC_SStp_Doors"
+    categories: [soft_stop.cco]
+  soft_stop_ramp:
+    id: 5
+    msg: "soft stop: ramp"
+    mnemonic: "s_PLC_SStp_Ramp"
+    categories: [soft_stop.cco]
+  soft_stop_inconsitency_direction_move:
+    id: 6
+    msg: "soft stop: inconsitency direction move"
+    mnemonic: "s_PLC_Inconsitency_Direction_Move"
+    categories: [soft_stop.cco]
+  soft_stop_spd_overshoot_timer_triggered:
+    id: 7
+    msg: "soft stop: spd overshoot timer triggered"
+    mnemonic: "s_PLC_Spd_Overshoot_Timer_Triggered"
+    categories: [soft_stop.cco]
+  soft_stop_inconsistency_auto_mode_states:
+    id: 8
+    msg: "soft stop: inconsistency auto mode states"
+    mnemonic: "s_PLC_Inconsistency_Auto_Mode_States"
+    categories: [soft_stop.cco]
+  soft_stop_batt_low_alert_too_long:
+    id: 9
+    msg: "soft stop: battery low alert too long"
+    mnemonic: "s_PLC_Batt_Low_Alert_Too_Long"
+    categories: [soft_stop.cco]
+  soft_stop_batt_low_alert_stop_at_station:
+    id: 10
+    msg: "soft stop: battery low alert stop at station"
+    mnemonic: "s_PLC_Batt_Low_Alert_Stop_At_Station"
+    categories: [soft_stop.cco]
+  soft_stop_relay_elb_fl_ctrl_select:
+    id: 11
+    msg: "soft stop: relay elb fl ctrl select"
+    mnemonic: "s_PLC_Relay_ELB_FL_Ctrl_Select"
+    categories: [soft_stop.cco]
+  soft_stop_relay_elb_fr_ctrl_select:
+    id: 12
+    msg: "soft stop: relay elb fr ctrl select"
+    mnemonic: "s_PLC_Relay_ELB_FR_Ctrl_Select"
+    categories: [soft_stop.cco]
+  soft_stop_relay_elb_rr_ctrl_select:
+    id: 13
+    msg: "soft stop: relay elb rr ctrl select"
+    mnemonic: "s_PLC_Relay_ELB_RR_Ctrl_Select"
+    categories: [soft_stop.cco]
+  soft_stop_relay_elb_rl_ctrl_select:
+    id: 14
+    msg: "soft stop: relay elb rl ctrl select"
+    mnemonic: "s_PLC_Relay_ELB_RL_Ctrl_Select"
+    categories: [soft_stop.cco]
+  soft_stop_rearming_auto:
+    id: 15
+    msg: "soft stop: rearming auto"
+    mnemonic: "s_PLC_SStp_Rearming_Auto"
+    categories: [soft_stop.cco]
+  soft_stop_rfsb_relay_inconsistency:
+    id: 16
+    msg: "soft stop: rfsb relay inconsistency"
+    mnemonic: "s_PLC_RFSB_Relay_Inconsistency"
+    categories: [soft_stop.cco]
+  soft_stop_elb_relay_inconsistency:
+    id: 17
+    msg: "soft stop: elb relay inconsistency"
+    mnemonic: "s_PLC_ELB_Relay_Inconsistency"
+    categories: [soft_stop.cco]
+  soft_stop_ffsb_relay_inconsistency:
+    id: 18
+    msg: "soft stop: ffsb relay inconsistency"
+    mnemonic: "s_PLC_FFSB_Relay_Inconsistency"
+    categories: [soft_stop.cco]
+  soft_stop_weight_overload:
+    id: 19
+    msg: "soft stop: weight overload"
+    mnemonic: "s_PLC_SStp_Weight_Overload"
+    categories: [soft_stop.cco]
+  soft_stop_mecu_sstop_required:
+    id: 20
+    msg: "soft stop: Main ECU"
+    mnemonic: "s_PLC_MECU_SStop_Not_Required"
+    categories: [soft_stop.cco]
+  soft_stop_standstill_fsb_f:
+    id: 21
+    msg: "soft stop: standstill fsb front"
+    mnemonic: "s_PLC_SStp_Standstill_FSB_F"
+    categories: [soft_stop.cco]
+  soft_stop_standstill_fsb_r:
+    id: 22
+    msg: "soft stop: standstill fsb rear"
+    mnemonic: "s_PLC_SStp_Standstill_FSB_R"
+    categories: [soft_stop.cco]
+  emergency_stop_unknown:
+    id: 23
+    msg: "emergency stop: unknown"
+    mnemonic: "EMERGENCY_STOP_UNKNOWN_CODE"
+    categories: [emergency.unknown, emergency.core_control]
+  #
+  # Handled by User category
+  # Do not reuse value
+  #
+  # emergency_stop_vhc_emergency_button_pressed: 24
+  # emergency_stop_int_emergency_button_pressed: 25
+  # emergency_stop_ext_emergency_button_pressed: 26
+  # emergency_stop_remote_emergency_button_pressed: 27
+  #
+  emergency_stop_navigation_pc_heartbeat:
+    id: 28
+    msg: "emergency stop: Navigation PC not ready"
+    mnemonic: "s_PCN_Heartbeat_Ok"
+    categories: [emergency.core_control]
+  #
+  # Handled by SafetyChain category
+  # Do not reuse value
+  #
+  # emergency_stop_front_left_lms_issue: 29
+  # emergency_stop_front_right_lms_issue: 30
+  # emergency_stop_rear_right_lms_issue: 31
+  # emergency_stop_rear_left_lms_issue: 32
+  #
+  emergency_stop_front_traction_controller_error:
+    id: 33
+    msg: "emergency stop: Traction Controller"
+    mnemonic: "s_PLC_FTC_Running"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_rear_traction_controller_error:
+    id: 34
+    msg: "emergency stop: rear traction controller error"
+    mnemonic: "s_PLC_RTC_Running"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_front_steering_controller_error:
+    id: 35
+    msg: "emergency stop: front steering controller error"
+    mnemonic: "s_PLC_FSC_No_Fault"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_rear_steering_controller_error:
+    id: 36
+    msg: "emergency stop: rear steering controller error"
+    mnemonic: "s_PLC_RSC_No_Fault"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_plc_can_input_error:
+    id: 37
+    msg: "emergency stop: Input CAN error"
+    mnemonic: "s_PLC_CAN_input_Op"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_plc_can_output_error:
+    id: 38
+    msg: "emergency stop: Output CAN error"
+    mnemonic: "s_PLC_CAN_output_Op"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_soft_stop_too_long:
+    id: 39
+    msg: "emergency stop: Soft stop too long"
+    mnemonic: "s_PLC_SStp_Too_Long"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_speed_measures_inconsistency:
+    id: 40
+    msg: "emergency stop: Incoherent speed"
+    mnemonic: "s_PLC_PLC_Speed_Measures_Consistent"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_reverse_inconsistency:
+    id: 41
+    msg: "emergency stop: Incoherent way of motion"
+    mnemonic: "s_PLC_Reverse_Inconsistency"
+    categories: [emergency.unknown, emergency.core_control]
+  #
+  # Handled by SafetyChain category
+  # Do not reuse value
+  #
+  # emergency_stop_front_left_lms_obstacle: 42
+  # emergency_stop_front_right_lms_obstacle: 43
+  # emergency_stop_rear_right_lms_obstacle: 44
+  # emergency_stop_rear_left_lms_obstacle: 45
+  #
+  emergency_stop_front_ksi_inconsistency:
+    id: 46
+    msg: "emergency stop: front ksi inconsistency"
+    mnemonic: "s_PLC_Front_KSI_Inconsistency"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_front_kvar_inconsistency:
+    id: 47
+    msg: "emergency stop: front kvar inconsistency"
+    mnemonic: "s_PLC_Front_KVar_Inconsistency"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_rear_ksi_inconsistency:
+    id: 48
+    msg: "emergency stop: rear ksi inconsistency"
+    mnemonic: "s_PLC_Rear_KSI_Inconsistency"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_rear_kvar_inconsistency:
+    id: 49
+    msg: "emergency stop: rear kvar inconsistency"
+    mnemonic: "s_PLC_Rear_KVar_Inconsistency"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_mecu_require_estop:
+    id: 50
+    msg: "emergency stop: Main ECU"
+    mnemonic: "s_PLC_MECU_EStop_Not_Required"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_mecu_heartbeat:
+    id: 51
+    msg: "emergency stop: Main ECU not ready"
+    mnemonic: "s_PLC_MECU_Heartbeat_NOk"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_fsb_inconsistency:
+    id: 52
+    msg: "emergency stop: fsb inconsistency"
+    mnemonic: "s_PLC_Error_FSB_Standstill"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_required_by_ftc:
+    id: 53
+    msg: "emergency stop: required by FTC"
+    mnemonic: "s_PLC_FTC_EStop_Not_Required"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_speed_coder_error:
+    id: 54
+    msg: "emergency stop: Incoherent coder speed"
+    mnemonic: "s_PLC_Coherent_Coders_Spd"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_deceleration_fault:
+    id: 55
+    msg: "emergency stop: Deceleration monitoring "
+    mnemonic: "s_PLC_Decel_fault"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_speed_command_fault:
+    id: 56
+    msg: "emergency stop: Speed monitoring"
+    mnemonic: "s_PLC_Spd_Cmd_fault"
+    categories: [emergency.unknown, emergency.core_control]
+  soft_stop_required_by_operator:
+    id: 57
+    msg: "soft stop: Operator"
+    mnemonic: "s_PLC_CoreControl_Manual_SStop"
+    categories: [soft_stop.cco]
+  controllers_disengaged:
+    id: 58
+    msg: "traction controllers disengaged"
+    mnemonic: "s_MECU_Power_In_Controller_KSI"
+  emergency_stop_ftc_auto:
+    id: 59
+    msg: "emergency stop: Traction Controller not in auto mode"
+    mnemonic: "s_FTC_Auto"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_mecu_auto:
+    id: 60
+    msg: "emergency stop: Main ECU not in auto mode"
+    mnemonic: "s_MECU_Auto"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_ecu_vhc_auto:
+    id: 61
+    msg: "emergency stop: Vehicle ECU not in auto mode"
+    mnemonic: "s_ECU_Vhc_Auto"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_ssd_parking_brake:
+    id: 62
+    msg: "emergency stop: Parking brake error"
+    mnemonic: "s_PLC_SDD_Park_Brk"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_ftc_heartbeat_error:
+    id: 63
+    msg: "emergency stop: Traction Controller not ready"
+    mnemonic: "s_PLC_FTC_Operational"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_physical_action:
+    id: 64
+    msg: "emergency stop: Driver Action"
+    mnemonic: "s_PLC_Physical_Action"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_external_device_monitoring_error:
+    id: 65
+    msg: "emergency stop: Safety relays"
+    mnemonic: "s_PLC_EDM_Error"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_pcn_rearm_too_long:
+    id: 66
+    msg: "emergency stop: Rearming too long"
+    mnemonic: "s_PLC_PCN_Rearm_too_long"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_reverse:
+    id: 67
+    msg: "emergency stop: reverse mode forbidden"
+    mnemonic: "s_PLC_MOC_Reverse"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_null_speed_error:
+    id: 68
+    msg: "emergency stop: inconsistent null speed information"
+    mnemonic: "s_PLC_FTC_Null_Speed_Error"
+    categories: [emergency.unknown, emergency.core_control]
+  soft_stop_required_by_pcn:
+    id: 69
+    msg: "soft stop: Navigation PC"
+    mnemonic: "s_PLC_PCN_SStop_req"
+    categories: [soft_stop.cco]
+  soft_stop_stop_autonomous_mode:
+    id: 70
+    msg: "soft stop: Leaving Auto Mode"
+    mnemonic: "s_PLC_PCN_Quit_Auto_Req"
+    categories: [soft_stop.cco]
+  soft_stop_driver_action:
+    id: 71
+    msg: "soft stop: Driver Action"
+    mnemonic: "s_PLC_Driver_Cmd_Req"
+    categories: [soft_stop.cco]
+  soft_stop_required_by_ftc:
+    id: 72
+    msg: "soft stop: Traction Controller"
+    mnemonic: "s_PLC_FTC_SStop_Req"
+    categories: [soft_stop.cco]
+  soft_stop_seat_nok:
+    id: 73
+    msg: "soft stop: Seat belts"
+    mnemonic: "s_PLC_Seat_Nok"
+    categories: [soft_stop.cco]
+  soft_stop_out_of_range_forward_speed:
+    id: 74
+    msg: "soft stop: Speed command (forward) out of range"
+    mnemonic: "s_PLC_FTC_sstop_fwd_speed_cmd"
+    categories: [soft_stop.cco]
+  soft_stop_out_of_range_front_steering:
+    id: 75
+    msg: "soft stop: Front steering command out of range"
+    mnemonic: "s_PLC_FTC_sstop_steer_front_cmd"
+    categories: [soft_stop.cco]
+  soft_stop_out_of_range_rear_steering:
+    id: 76
+    msg: "soft stop: rear steering command out of range"
+    mnemonic: "s_PLC_FTC_sstop_steer_rear_cmd"
+    categories: [soft_stop.cco]
+  soft_stop_out_of_range_accel:
+    id: 77
+    msg: "soft stop: acceleration command out of range"
+    mnemonic: "s_PLC_FTC_sstop_accel_cmd"
+    categories: [soft_stop.cco]
+  soft_stop_out_of_range_decel:
+    id: 78
+    msg: "soft stop: deceleration command out of range"
+    mnemonic: "s_PLC_FTC_sstop_decel_cmd"
+    categories: [soft_stop.cco]
+  soft_stop_out_of_range_backward_speed:
+    id: 79
+    msg: "soft stop: Speed command (backward) out of range"
+    mnemonic: "s_PLC_FTC_sstop_reverse_speed_cmd"
+    categories: [soft_stop.cco]
+  emergency_stop_overspeed_error:
+    id: 80
+    msg: "emergency stop: overspeed error"
+    mnemonic: "s_overspeed"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_velocity_signal_loss:
+    id: 81
+    msg: "emergency stop: velocity signal loss"
+    mnemonic: "s_Velocity_loss"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_inconsistent_FU_status:
+    id: 82
+    msg: "emergency stop: inconsistent FU state"
+    mnemonic: "s_inconsistent_FU_status"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_SCES_fault:
+    id: 83
+    msg: "emergency stop: SCES fault"
+    mnemonic: "s_SCES_fault"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_hydraulic_brake_init_failed:
+    id: 84
+    msg: "emergency stop: Hydraulic brake init failed or bleed mode active"
+    mnemonic: "s_PLC_MECU_EStop_Hydrau_Not_Required"
+    categories: [emergency.unknown, emergency.core_control]
+  soft_stop_fuel_low:
+    id: 85
+    msg: "soft stop: fuel is low"
+    mnemonic: "s_MECU_Soft_Stop_Fuel_Low"
+    categories: [soft_stop.cco]
+  emergency_stop_mecu_require_hstop:
+    id: 86
+    msg: "emergency stop: Main ECU"
+    mnemonic: "s_PLC_MECU_HStop_Not_Required"
+    categories: [emergency.unknown, emergency.core_control]
+  soft_stop_batt_low:
+    id: 87
+    msg: "soft stop: battery low"
+    mnemonic: "s_PLC_SStp_Battery_Low_Copy"
+    categories: [soft_stop.cco]
+  # elb_engaging_failure:
+  #   id: 88
+  #   msg: "Error engaging EL brake"
+  #   mnemonic: "s_MECU_ELB_Error_Engaging"
+  # elb_releasing_failure:
+  #   id: 89
+  #   msg: "Error releasing EL brake"
+  #   mnemonic: "s_MECU_ELB_Error_Releasing"
+  emergency_stop_scesA_loss_heartbeat:
+    id: 90
+    msg: "emergency stop: SCESA heartbeat loss"
+    mnemonic: "s_PLC_SCES_A_No_Error"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_scesB_loss_heartbeat:
+    id: 91
+    msg: "emergency stop: SCESB heartbeat loss"
+    mnemonic: "s_PLC_SCES_B_No_Error"
+    categories: [emergency.unknown, emergency.core_control]
+  front_gearbox_error_monitoring:
+    id: 92
+    msg: "Front Gearbox Error"
+    mnemonic: "s_MECU_Front_GearBox_Error_Monitoring"
+  rear_gearbox_error_monitoring:
+    id: 93
+    msg: "Rear Gearbox Error"
+    mnemonic: "s_MECU_Rear_GearBox_Error_Monitoring"
+  soft_stop_single_drive:
+    id: 94
+    msg: "soft stop: AV is in single drive mode"
+    mnemonic: "s_PLC_FTC_sstop_Single_Drive"
+    categories: [soft_stop.cco]
+  emergency_stop_ebs_heartbeat_error:
+    id: 95
+    msg: "emergency stop: EBS heartbeat error"
+    mnemonic: "s_EBS_Heartbeat_Ok"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_incoherent_coder_speed:
+    id: 96
+    msg: "emergency stop: Incoherent coder speed according to vehicle feedback"
+    mnemonic: "s_FTC_Coder_Fbk_Ok_filter"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_service_deceleration_fault:
+    id: 97
+    msg: "emergency stop: Deceleration fault"
+    mnemonic: "s_Service_decel_fault"
+    categories: [emergency.unknown, emergency.core_control]
+  # emergency_stop_motor_and_coders_speed_inconsistency:
+  #   id: 98
+  #   msg: "emergency stop : Wheel coder speed is higher than motor speed"
+  #   mnemonic: "s_MECU_Motor_And_Coders_Speed_Consistent"
+  emergency_stop_required_by_pcn:
+    id: 99
+    msg: "emergency stop: Navigation PC"
+    mnemonic: "s_PLC_PCN_EStop_Required"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_parkbrake_inconsistent:
+    id: 100
+    msg: "emergency stop: Park Brake state inconsistent"
+    mnemonic: "s_PLC_ParkBrake_Inconsistent"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_mecu_ftc_mode_inconsistent:
+    id: 101
+    msg: "emergency stop: MECU and FTC state machines desynchronized"
+    mnemonic: "s_PLC_MECU_Mode_Inconsistent"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_incoherent_command_feedback_speed:
+    id: 102
+    msg: "emergency stop: Incoherent speed between command and feedback"
+    mnemonic: "s_Speed_Cmd_Ok_filter"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_physical_button_manual:
+    id: 103
+    msg: "emergency stop: physical button is set to manual"
+    mnemonic: "s_PLC_Operating_Mode_Switch"
+    categories: [emergency.unknown, emergency.core_control]
+  elb_failure:
+    id: 104
+    msg: "Error engaging or releasing EL brake"
+    mnemonic: "s_MECU_ELB_Error_Engaging"
+  emergency_stop_front_fsb_engaged_while_moving:
+    id: 105
+    msg: "emergency stop: Front FSB engaged while moving"
+    mnemonic: "s_PLC_Error_F_FSB_Moving"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_rear_fsb_engaged_while_moving:
+    id: 106
+    msg: "emergency stop: Rear FSB engaged while moving"
+    mnemonic: "s_PLC_Error_R_FSB_Moving"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_doors_error:
+    id: 107
+    msg: "emergency stop: Doors state error"
+    mnemonic: "s_PLC_Doors_EStop"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_ramp_error:
+    id: 108
+    msg: "emergency stop: Ramp state error"
+    mnemonic: "s_PLC_Ramp_EStop"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_ue11_monitoring_error:
+    id: 109
+    msg: "emergency stop: Error in the monitoring of the UE11 managing the ELB"
+    mnemonic: "s_PLC_UE11_ELB_Monitoring_Error"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_ftc_reset_request:
+    id: 110
+    msg: "emergency stop: Traction controller reset request"
+    mnemonic: "s_PLC_FTC_Reset_Request"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_dock_mode_error:
+    id: 111
+    msg: "emergency stop: Dock mode requested whereas speed is too high"
+    mnemonic: "s_PLC_DockMode_Speed_Error"
+    categories: [emergency.unknown, emergency.core_control]
+  soft_stop_inconsistency_safety_lidar_config:
+    id: 112
+    msg: "soft stop: Inconsistency between safety lidars config"
+    mnemonic: "s_PLC_SStop_Inconsistent_MRS_Config"
+    categories: [soft_stop.cco]
+  soft_stop_inconsistency_safety_lidar_mecu_config:
+    id: 113
+    msg: "soft stop: Inconsistency between MECU and safety lidars config"
+    mnemonic: "s_PLC_SStop_Inconsistent_Hydro_Config"
+    categories: [soft_stop.cco]
+  emergency_stop_lifting_inconsistency:
+    id: 114
+    msg: "emergency stop: System state inconsistency during lifting"
+    mnemonic: "s_PLC_Lifting_Inconsistent"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_init_ELB_failed:
+    id: 115
+    msg: "emergency stop: Init ELB failed or bleed mode activated"
+    mnemonic: "s_PLC_MECU_ELB_Estop_Not_Required"
+    categories: [emergency.unknown, emergency.core_control]
+  emergency_stop_max_speed_overshoot:
+    id: 116
+    msg: "emergency stop: Platform speed overshoot"
+    mnemonic: "s_PLC_Max_Speed_Overshoot"
+    categories: [emergency.unknown, emergency.core_control]
+  soft_stop_software_versions_inconsistency:
+    id: 117
+    msg: "soft stop: Software versions inconsistency"
+    mnemonic: "s_PLC_MECU_SStop_by_SW_Inconsistency"
+    categories: [soft_stop.cco]
+  emergency_stop_scesA_disabled:
+    id: 118
+    msg: "emergency stop: SCES A is not enabled"
+    mnemonic: "s_Obstacle_Detection_Disabled"
+    categories: [emergency.unknown, emergency.core_control]

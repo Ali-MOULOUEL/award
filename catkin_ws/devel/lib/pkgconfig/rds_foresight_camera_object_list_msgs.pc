@@ -1,0 +1,8 @@
+prefix=/home/project/award/catkin_ws/devel
+
+Name: rds_foresight_camera_object_list_msgs
+Description: Description of rds_foresight_camera_object_list_msgs
+Version: 0.0.0
+Cflags: -I/home/project/award/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

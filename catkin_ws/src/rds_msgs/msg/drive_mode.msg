@@ -1,0 +1,5 @@
+uint8 DRIVE_MODE_MANUAL = 0 
+uint8 DRIVE_MODE_AUTOMATIC = 1
+uint8 DRIVE_MODE_TELEOPERATION = 2
+
+uint8 drive_mode

@@ -1,0 +1,192 @@
+must_fill_categories: false
+errors:
+  emergency_stop_unknown:
+    id: 1
+    msg: "unknown emergency stop from lowlevel"
+    categories: [emergency.software_system, emergency.unknown]
+  emergency_stop_command_timeout:
+    id: 2
+    msg: "emergency stop due to control command related timeout"
+    categories: [emergency.software_system]
+  device_open_error:
+    id: 3
+    msg: "failed to open communication port"
+  device_read_error:
+    id: 4
+    msg: "failed to read from communication port"
+  device_write_error:
+    id: 5
+    msg: "failed to write to communication port"
+  device_timeout:
+    id: 6
+    msg: "device is not responding"
+  interrupted_connection_error:
+    id: 7
+    msg: "connection to device interrupted"
+  corrupted_message_error:
+    id: 8
+    msg: "received message is corrupted"
+    categories: [traffic_light.driver]
+  unknown_error:
+    id: 9
+    msg: "unknown error in hardware abstraction layer"
+    categories: [traffic_light.driver]
+  doors_obstacle:
+    id: 10
+    msg: "doors obstacle"
+  doors_fault:
+    id: 11
+    msg: "doors fault"
+  doors_left_locked:
+    id: 12
+    msg: "doors left locked"
+  doors_right_locked:
+    id: 13
+    msg: "doors right locked"
+  doors_drive_error:
+    id: 14
+    msg: "drive doors error"
+  ramp_fault:
+    id: 15
+    msg: "ramp fault"
+  ramp_drive_error:
+    id: 16
+    msg: "drive ramp error"
+  ramp_disabled:
+    id: 17
+    msg: "ramp disabled"
+    categories: [accessory.disabled]
+  invalid_configuration_error:
+    id: 18
+    msg: "device configuration is invalid"
+  outdated_message_error:
+    id: 19
+    msg: "received message is outdated"
+    categories: [traffic_light.driver]
+  timing_inconsistency_error:
+    id: 20
+    msg: "timing inconsistency error"
+    categories: [traffic_light.driver]
+  emergency_site_unexpected_stop:
+    id: 21
+    msg: "emergency stop due to unexpected EZDrive stop"
+    categories: [emergency.software_system]
+  message_checksum_mismatch:
+    id: 22
+    msg: "message checksum mismatch"
+  message_payload_not_decoded:
+    id: 23
+    msg: "message payload cannot be decoded"
+  message_not_sent:
+    id: 24
+    msg: "message has not been sent"
+  message_not_encoded:
+    id: 25
+    msg: "message cannot be encoded"
+  configuration_generation_failed:
+    id: 26
+    msg: "configuration generation failed"
+  preempted:
+    id: 27
+    msg: "computation was preempted"
+  busy:
+    id: 28
+    msg: "Another computation is already running"
+  device_configuration_failed:
+    id: 29
+    msg: "device configuration failed"
+  site_origin_not_set:
+    id: 30
+    msg: "site origin not set"
+  emergency_driver_error:
+    id: 31
+    msg: "emergency due to driver error"
+    categories: [software_error.fatal_site, emergency.software]
+  emergency_driver_system_error:
+    id: 32
+    msg: "emergency due to system driver error"
+    categories: [software_error.fatal_system, emergency.software_system]
+  emergency_stop_critical_can_frame_timeout_error:
+    id: 33
+    msg: "emergency stop due to critical CAN frame not received for too long"
+    categories: [emergency.software_system]
+  emergency_stop_critical_can_frame_sequence_error:
+    id: 34
+    msg: "emergency stop due to critical CAN frames received out of order or missing CAN frames"
+    categories: [emergency.software_system]
+  charging_communication_error:
+    id: 35
+    msg: "Communication error with the charging station"
+  charging_system_error:
+    id: 36
+    msg: "Charging station system error"
+  charging_unavailable:
+    id: 37
+    msg: "Charging system is not available"
+  trailer_sensor_error:
+    id: 38
+    msg: "An error occurred with the trailer sensor"
+    categories: [trailer.any]
+  trailer_sensor_data_unavailable:
+    id: 39
+    msg: "Trailer sensor data are not available"
+    categories: [trailer.unavailable]
+  ramp_deactivated:
+    id: 40
+    msg: "ramp deactivated"
+    categories: [accessory.deactivated]
+  odometry_frame_crc_error:
+    id: 41
+    msg: "Vehicle stopped: EZMove odometry frame CRC error"
+    categories: [soft_stop.software]
+  odometry_frame_sequence_counter_error:
+    id: 42
+    msg: "Vehicle stopped: EZMove odometry frame sequence counter error"
+    categories: [soft_stop.software]
+  odometry_frame_timeout_error:
+    id: 43
+    msg: "Vehicle stopped: EZMove odometry frame timeout error"
+    categories: [soft_stop.software]
+  trailer_angle_frame_crc_error:
+    id: 44
+    msg: "Vehicle stopped: EZMove trailer angle frame CRC error"
+    categories: [soft_stop.software]
+  trailer_angle_frame_sequence_counter_error:
+    id: 45
+    msg: "Vehicle stopped: EZMove trailer angle frame sequence counter error"
+    categories: [soft_stop.software]
+  trailer_angle_frame_timeout_error:
+    id: 46
+    msg: "Vehicle stopped: EZMove trailer angle frame timeout error"
+    categories: [soft_stop.software]
+  applied_command_frame_crc_error:
+    id: 47
+    msg: "Vehicle stopped: EZMove applied command frame CRC error"
+    categories: [soft_stop.software]
+  applied_command_frame_sequence_counter_error:
+    id: 48
+    msg: "Vehicle stopped: EZMove applied command frame sequence counter error"
+    categories: [soft_stop.software]
+  applied_command_frame_timeout_error:
+    id: 49
+    msg: "Vehicle stopped: EZMove applied command frame timeout error"
+    categories: [soft_stop.software]
+  handling_feedback_frame_crc_error:
+    id: 50
+    msg: "Vehicle stopped: EZMove handling feedback frame CRC error"
+    categories: [soft_stop.software]
+  handling_feedback_frame_sequence_counter_error:
+    id: 51
+    msg: "Vehicle stopped: EZMove handling feedback frame sequence counter error"
+    categories: [soft_stop.software]
+  handling_feedback_frame_timeout_error:
+    id: 52
+    msg: "Vehicle stopped: EZMove handling feedback frame timeout error"
+    categories: [soft_stop.software]
+  device_invalid_output:
+    id: 53
+    msg: "device output is invalid"
+  ezcan_major_version_mismatch:
+    id: 54
+    msg: "Emergency stop: EZCan major version mismatch between EZDrive and EZMove"
+    categories: [emergency.software_system]

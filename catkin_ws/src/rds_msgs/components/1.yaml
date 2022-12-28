@@ -1,0 +1,6 @@
+must_fill_categories: false
+errors:
+  # 0 success
+  unknown:
+    id: 1
+    msg: "unknown"

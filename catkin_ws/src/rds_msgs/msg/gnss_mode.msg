@@ -1,0 +1,9 @@
+int8 MODE_UNKNOWN = -1
+int8 MODE_SINGLE = 0
+int8 MODE_DIFF = 1
+int8 MODE_RTK_FLOAT = 2
+int8 MODE_RTK_INT = 3
+int8 MODE_PPP_CONVERGING = 4
+int8 MODE_PPP = 5
+int8 mode
+

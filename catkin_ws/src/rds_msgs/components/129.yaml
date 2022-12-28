@@ -1,0 +1,45 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  traffic_light_outside_fov:
+    id: 1
+    msg: "Segmentation: outside FOV"
+    categories: [traffic_light_cause.unseen]
+  traffic_light_too_close_or_behind:
+    id: 2
+    msg: "Segmentation: traffic light too close or behind camera plane"
+    categories: [traffic_light_cause.unseen]
+  traffic_light_looking_away:
+    id: 3
+    msg: "Segmentation: traffic light looking away from camera"
+    categories: [traffic_light_cause.unseen]
+  traffic_light_too_far:
+    id: 4
+    msg: "Segmentation: traffic light too small/far away to observe it"
+    categories: [traffic_light_cause.unseen]
+  traffic_light_upside_down:
+    id: 5
+    msg: "Segmentation: traffic light defined is upside down"
+    categories: [traffic_light_cause.unseen]
+  traffic_light_unknown:
+    id: 6
+    msg: "Segmentation: traffic light detection failed"
+    categories: [traffic_light_cause.dl_detection]
+  traffic_light_multiple_detections:
+    id: 7
+    msg: "Segmentation: multiple traffic light detections found in a single ROI"
+    categories: [traffic_light_cause.dl_detection]
+  traffic_light_tf_unavailable:
+    id: 8
+    msg: "Segmentation: world to cam transform not available for traffic light reprojection on camera plane"
+    categories: [traffic_light_cause.prerequisites]
+  traffic_light_goal_null:
+    id: 9
+    msg: "Segmentation: traffic light goal provided was null"
+    categories: [traffic_light_cause.prerequisites]
+  traffic_light_result_revised:
+    id: 10
+    msg: "Segmentation: traffic light result was revised by reviser"
+    categories: [traffic_light_cause.dl_detection]

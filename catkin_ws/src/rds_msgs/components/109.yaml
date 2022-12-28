@@ -1,0 +1,136 @@
+must_fill_categories: true
+errors:
+  # 0 success
+  unknown:
+    id: 1
+    msg: "safety chain: unknown"
+    categories: [emergency.safety_chain]
+  lidar_front_left_detection:
+    id: 2
+    msg: "safety chain: Obstacle detected Lidar Front Left"
+    mnemonic: "s_PLC_LMS_FL_No_Obstacle"
+    categories: [emergency.PLC_obstacle_detection]
+  lidar_front_right_detection:
+    id: 3
+    msg: "safety chain: Obstacle detected Lidar Front Right"
+    mnemonic: "s_PLC_LMS_FR_No_Obstacle"
+    categories: [emergency.PLC_obstacle_detection]
+  lidar_rear_left_detection:
+    id: 4
+    msg: "safety chain: Obstacle detected Lidar Rear Left"
+    mnemonic: "s_PLC_LMS_RL_No_Obstacle"
+    categories: [emergency.PLC_obstacle_detection]
+  lidar_rear_right_detection:
+    id: 5
+    msg: "safety chain: Obstacle detected Lidar Rear Right"
+    mnemonic: "s_PLC_LMS_RR_No_Obstacle"
+    categories: [emergency.PLC_obstacle_detection]
+  lidar_front_left_issue:
+    id: 6
+    msg: "safety chain: Lidar Front Left not ready"
+    mnemonic: "s_LMS_FL_Status"
+    categories: [emergency.PLC_sensor_issue]
+  lidar_front_right_issue:
+    id: 7
+    msg: "safety chain: Lidar Front Right not ready"
+    mnemonic: "s_LMS_FR_Status"
+    categories: [emergency.PLC_sensor_issue]
+  lidar_rear_right_issue:
+    id: 8
+    msg: "safety chain: Lidar Rear Right not ready"
+    mnemonic: "s_LMS_RR_Status"
+    categories: [emergency.PLC_sensor_issue]
+  lidar_rear_left_issue:
+    id: 9
+    msg: "safety chain: Lidar Rear Left not ready"
+    mnemonic: "s_LMS_RL_Status"
+    categories: [emergency.PLC_sensor_issue]
+  unknown_lidar_issue:
+    id: 10
+    msg: "safety chain: unknown lidar issue"
+    categories: [emergency.PLC_sensor_issue]
+  mrs_front_detection:
+    id: 11
+    msg: "safety chain: MRS Front detection"
+    mnemonic: "s_MECU_MRS_Front_No_Obstacle_Detected"
+    categories: [emergency.PLC_obstacle_detection]
+  mrs_rear_detection:
+    id: 12
+    msg: "safety chain: MRS Rear detection"
+    mnemonic: "s_MECU_MRS_Rear_No_Obstacle_Detected"
+    categories: [emergency.PLC_obstacle_detection]
+  mrs_front_right_detection:
+    id: 13
+    msg: "safety chain: MRS Front Right detection"
+    mnemonic: "s_MECU_MRS_Front_Right_No_Obstacle_Detected"
+    categories: [emergency.PLC_obstacle_detection]
+  mcs_front_left_detection:
+    id: 14
+    msg: "safety chain: MCS Front Left detection"
+    mnemonic: "s_MECU_MCS_Front_Left_No_Obstacle_Detected"
+    categories: [emergency.PLC_obstacle_detection]
+  mrs_front_right_issue:
+    id: 15
+    msg: "safety chain: MRS Front Right issue"
+    mnemonic: "s_MECU_MRS_Front_Right_Issue"
+    categories: [emergency.PLC_sensor_issue]
+  mcs_front_left_issue:
+    id: 16
+    msg: "safety chain: MCS Front Left issue"
+    mnemonic: "s_MECU_MCS_Front_Left_Issue"
+    categories: [emergency.PLC_sensor_issue]
+  mrs_front_issue:
+    id: 17
+    msg: "safety chain: MRS Front issue"
+    mnemonic: "s_MRS_F_Status"
+    categories: [emergency.PLC_sensor_issue]
+  mrs_rear_issue:
+    id: 18
+    msg: "safety chain: MRS Rear issue"
+    mnemonic: "s_MRS_R_Status"
+    categories: [emergency.PLC_sensor_issue]
+  mcs_front_right_detection:
+    id: 19
+    msg: "safety chain: MCS Front Right detection"
+    mnemonic: "s_PLC_Lidar_FR_No_Obstacle"
+    categories: [emergency.PLC_obstacle_detection]
+  mcs_rear_right_detection:
+    id: 20
+    msg: "safety chain: MCS Rear Right detection"
+    mnemonic: "s_PLC_Lidar_RR_No_Obstacle"
+    categories: [emergency.PLC_obstacle_detection]
+  mcs_rear_left_detection:
+    id: 21
+    msg: "safety chain: MCS Rear Left detection"
+    mnemonic: "s_PLC_Lidar_RL_No_Obstacle"
+    categories: [emergency.PLC_obstacle_detection]
+  mcs_front_right_issue:
+    id: 22
+    msg: "safety chain: MCS Front Right issue"
+    mnemonic: "s_PLC_Lidar_FR_Status"
+    categories: [emergency.PLC_sensor_issue]
+  mcs_rear_right_issue:
+    id: 23
+    msg: "safety chain: MCS Rear Right issue"
+    mnemonic: "s_PLC_Lidar_RR_Status"
+    categories: [emergency.PLC_sensor_issue]
+  mcs_rear_left_issue:
+    id: 24
+    msg: "safety chain: MCS Rear Left issue"
+    mnemonic: "s_PLC_Lidar_RL_Status"
+    categories: [emergency.PLC_sensor_issue]
+  mrs_front_left_detection:
+    id: 25
+    msg: "safety chain: MRS Front Left detection"
+    mnemonic: "s_MECU_MRS_Front_Left_No_Obstacle_Detected"
+    categories: [emergency.PLC_obstacle_detection]
+  mrs_front_left_issue:
+    id: 26
+    msg: "safety chain: MRS Front Left issue"
+    mnemonic: "s_MECU_MRS_Front_Left_Issue"
+    categories: [emergency.PLC_sensor_issue]
+  lms_rear_issue:
+    id: 27
+    msg: "safety chain: LMS Rear issue"
+    mnemonic: "s_PLC_Load_Lidar_Status"
+    categories: [emergency.PLC_sensor_issue]

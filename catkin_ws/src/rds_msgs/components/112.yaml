@@ -1,0 +1,23 @@
+must_fill_categories: true
+errors:
+  # 0 success
+  emergency_stop_vhc_emergency_button_pressed:
+    id: 1
+    msg: "emergency stop: Emergency button pressed"
+    mnemonic: "s_Vhc_No_EStop"
+    categories: [emergency.user]
+  emergency_stop_int_emergency_button_pressed:
+    id: 2
+    msg: "emergency stop: int emergency button pressed"
+    mnemonic: "s_Doors_Emer_Pressed_Int"
+    categories: [emergency.user]
+  emergency_stop_ext_emergency_button_pressed:
+    id: 3
+    msg: "emergency stop: ext emergency button pressed"
+    mnemonic: "s_Doors_Emer_Pressed_Ext"
+    categories: [emergency.user]
+  emergency_stop_remote_emergency_button_pressed:
+    id: 4
+    msg: "emergency stop: remote emergency button pressed"
+    mnemonic: "s_EStop_Manual_State"
+    categories: [emergency.user]

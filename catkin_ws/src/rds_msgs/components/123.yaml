@@ -1,0 +1,11 @@
+must_fill_categories: false
+errors:
+  success:
+    id: 0
+    msg: "success"
+  extract_params_from_rosparams:
+    id: 1
+    msg: "failed to extract params from bag"
+  extract_params_from_profile:
+    id: 2
+    msg: "failed to extract params from profile"

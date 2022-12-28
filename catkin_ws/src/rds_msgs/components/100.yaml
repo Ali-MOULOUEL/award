@@ -1,0 +1,197 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  too_far_from_trajectory:
+    id: 1
+    msg: "vehicle too far from trajectory"
+  blocked_by_obstacle:
+    id: 2
+    msg: "vehicle blocked by an obstacle"
+  invalid_input:
+    id: 3
+    msg: "given input (path, destination, etc.) is not valid"
+  abnormal_termination:
+    id: 4
+    msg: "unexpected termination"
+  invalid_localization:
+    id: 5
+    msg: "localization not valid"
+  circumvention_trajectory_computation_failure:
+    id: 6
+    msg: "circumvention trajectory not found"
+  operator_declined:
+    id: 7
+    msg: "operator declined the navigation request"
+  preempted:
+    id: 8
+    msg: "navigation action interrupted"
+  invalid_roadmap:
+    id: 9 # rmf
+    msg: "roadmap file is not valid"
+  obu_failure:
+    id: 10
+    msg: "On-Board V2I Unit failure"
+    categories: [traffic_light.fatal]
+  traffic_light_not_responding:
+    id: 11
+    msg: "traffic light not responding"
+    categories: [traffic_light.fatal, traffic_light.timeout]
+  traffic_light_off:
+    id: 12
+    msg: "traffic light off"
+    categories: [traffic_light.fatal]
+  traffic_light_flashing:
+    id: 13
+    msg: "traffic light flashing"
+    categories: [traffic_light.fatal]
+  # traffic_light_unknown_timing:
+  #   id: 14
+  #   msg: "traffic light unknown timing"
+  observation_obstacle:
+    id: 15
+    msg: "obstacle found in observation zone"
+  observation_obstructed:
+    id: 16
+    msg: "observation zone obstructed"
+  observation_timeout:
+    id: 17
+    msg: "observation zone timeout"
+  wait_for_operator:
+    id: 18
+    msg: "wait for operator decision"
+  circumvention_canceled:
+    id: 19
+    msg: "obstacle circumvention canceled"
+  emergency_stop_lateral_error:
+    id: 20
+    msg: "emergency stop engaged due to lateral error"
+    categories: [emergency.software]
+  unreachable_trajectory:
+    id: 21
+    msg: "vehicle cannot reach trajectory"
+  bad_localization:
+    id: 22
+    msg: "navigation stopped due to bad localization"
+  inconsistent_projection_on_trajectory:
+    id: 23
+    msg: "navigation stopped due to inconsistent jump on trajectory"
+  vehicle_cannot_go_backward:
+    id: 24
+    msg: "vehicle cannot go backward"
+  canceled:
+    id: 25
+    msg: "navigation canceled"
+  no_path_found:
+    id: 26
+    msg: "no path found"
+  no_junction_point_with_path_found:
+    id: 27
+    msg: "no valid (collision-free) pose at end of obstacle avoidance path to reach reference route found"
+  route_too_short:
+    id: 28
+    msg: "route is too short"
+  no_obstacle_along_path:
+    id: 29
+    msg: "no collision detected along the path"
+  navigable_area_generation_failed:
+    id: 30
+    msg: "navigable area generation failed"
+  navigable_area_bounding_failed:
+    id: 31
+    msg: "navigable area have unfeasible sampling bounds"
+  point_cloud_bounding_failed:
+    id: 32
+    msg: "point clouds have unfeasible sampling bounds"
+  no_transformation_available:
+    id: 33
+    msg: "no frame transformation available"
+  blind_lidars_unsafe:
+    id: 34
+    msg: "Lidars are blind, preventing navigation"
+  local_trajectory_crossing_intersection:
+    id: 35
+    msg: "Local trajectory (circumvention or catch-up) would cross an intersection"
+  traffic_light_unknown_phase:
+    id: 36
+    msg: "traffic light unknown phase"
+    categories: [traffic_light.fatal]
+  busy:
+    id: 39
+    msg: "A computation is already active"
+  no_roadmap_loaded:
+    id: 40
+    msg: "No roadmap file loaded"
+  roadmap_doesnt_exist:
+    id: 41
+    msg: "Specified roadmap file does not exist (or permissions are incorrect)"
+  illformed_roadmap:
+    id: 42
+    msg: "Ill-formed roadmap file"
+  roadmap_constraint_violation:
+    id: 43
+    msg: "Roadmap file violates some vehicle constraints"
+  roadmap_synchronisation_issue:
+    id: 44
+    msg: "AV fails to synchronise roadmap content"
+  goal_hint_not_on_remaining_route:
+    id: 45
+    msg: "Goal hint is not on the remaining route"
+  catch_up_trajectory_computation_failure:
+    id: 46
+    msg: "Catch up trajectory not found"
+  maneuver_trajectory_computation_failure:
+    id: 47
+    msg: "Maneuver trajectory not found"
+  mpc_stopped:
+    id: 48
+    msg: "The vehicle is stopped in the feasible solution"
+  mpc_infeasible:
+    id: 49
+    msg: "No solution found"
+  mpc_speed_bump_not_found:
+    id: 50
+    msg: "No speed bump trajectory found when searching for stopping constraint"
+  mpc_speed_bump_feasible:
+    id: 51
+    msg: "Speed bump trajectory is feasible, can't find the stopping constraint"
+  mpc_pb_not_constructible:
+    id: 52
+    msg: "Can't build the MPC problem"
+  mpc_other:
+    id: 53
+    msg: "Unknown MPC error"
+  unknown_maneuver_type:
+    id: 54
+    msg: "The requested maneuver type does not exist or is not handled by the platform"
+  not_aligned_to_swap_body:
+    id: 55
+    msg: "The vehicle is not sufficiently aligned to the swap body to perform the rest of the maneuver"
+  insufficient_navigable_area_target:
+    id: 56
+    msg: "The navigable area is too small near the target, the vehicle is not allowed to navigate there"
+  maneuver_point_not_reached:
+    id: 57
+    msg: "The vehicle failed to reach a maneuver point"
+  object_on_parking_spot:
+    id: 58
+    msg: "An object is already present on the target parking spot"
+  maneuver_area_generation_failed:
+    id: 59
+    msg: "Maneuver area generation failed"
+  maneuver_area_bounding_failed:
+    id: 60
+    msg: "Maneuver area have unfeasible sampling bounds"
+  missing_swap_body_detection:
+    id: 61
+    msg: "Missing swap body detection to perform the rest of the maneuver"
+  no_route_found:
+    id: 62
+    msg: "No route found"
+  ellipse_sampling_failed:
+    id: 63
+    msg: "Solver failed during uncertainty ellipse sampling"
+  swap_body_type_mismatch:
+    id: 64
+    msg: "Mismatch between expected and detected swap body type"

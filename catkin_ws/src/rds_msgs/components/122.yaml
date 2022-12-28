@@ -1,0 +1,29 @@
+must_fill_categories: false
+errors:
+  device_authorization_error:
+    id: 1
+    msg: "modem: authorization error (check modem password)"
+  policy_authorization_error:
+    id: 2
+    msg: "modem: this configuration is not authorized"
+  unexpected_answer:
+    id: 3
+    msg: "modem: unexpected answer"
+  no_sim_card:
+    id: 4
+    msg: "modem: no SIM card"
+  sim_card_locked:
+    id: 5
+    msg: "modem: incorrect PIN code or locked SIM card"
+  cellular_connecting:
+    id: 6
+    msg: "modem: cellular network is trying to connect"
+  cellular_disconnected:
+    id: 7
+    msg: "modem: cellular network is disconnected"
+  wifi_connecting:
+    id: 8
+    msg: "modem: WiFi network is trying to connect"
+  wifi_disconnected:
+    id: 9
+    msg: "modem: WiFi network is disconnected"

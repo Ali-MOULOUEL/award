@@ -1,0 +1,7 @@
+#RadarObject DynamicProperty field
+uint8 DYNAMICPROPERTY_MOVING = 0
+uint8 DYNAMICPROPERTY_STATIONARY = 1
+uint8 DYNAMICPROPERTY_ONCOMING = 2
+uint8 DYNAMICPROPERTY_UNKNOWN = 3
+
+uint8 DynamicProperty

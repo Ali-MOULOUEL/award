@@ -1,0 +1,1057 @@
+{   
+    "Frames": [
+    {
+    "FrameIndex": 0,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.580000 , 
+    "Obstacles": [
+    ]
+    },
+    {
+    "FrameIndex": 1,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.606000 , 
+    "Obstacles": [
+    ]
+    },
+    {
+    "FrameIndex": 2,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.639000 , 
+    "Obstacles": [
+    ]
+    }
+    ,
+    {
+    "FrameIndex": 3,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.672000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 50.01,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.02,
+    "PositionY": 2.77,
+    "PositionZ": 49.96,
+    "RealHeight": 1.76,
+    "RealWidth": 0.71,
+    "RelativeSpeed": 3.30,
+    "Score": 0.96,
+    "TTC": 0.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 4,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.705000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 50.11,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.03,
+    "PositionY": 2.78,
+    "PositionZ": 50.07,
+    "RealHeight": 1.76,
+    "RealWidth": 0.72,
+    "RelativeSpeed": 3.30,
+    "Score": 0.96,
+    "TTC": 0.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 5,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.739000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 738,
+     "BottomRightY": 242,
+     "TopLeftX": 708,
+     "TopLeftY": 170
+     },
+    "CenterX": 723,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 50.22,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 1.99,
+    "PositionY": 2.78,
+    "PositionZ": 50.18,
+    "RealHeight": 1.77,
+    "RealWidth": 0.72,
+    "RelativeSpeed": 3.30,
+    "Score": 0.96,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 6,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.773000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 49.73,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.01,
+    "PositionY": 2.76,
+    "PositionZ": 49.69,
+    "RealHeight": 1.75,
+    "RealWidth": 0.71,
+    "RelativeSpeed": -0.16,
+    "Score": 0.95,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 7,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.806000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 49.72,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.01,
+    "PositionY": 2.76,
+    "PositionZ": 49.68,
+    "RealHeight": 1.75,
+    "RealWidth": 0.71,
+    "RelativeSpeed": -0.16,
+    "Score": 0.95,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 8,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.839000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 49.72,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.01,
+    "PositionY": 2.76,
+    "PositionZ": 49.68,
+    "RealHeight": 1.75,
+    "RealWidth": 0.71,
+    "RelativeSpeed": -0.16,
+    "Score": 0.95,
+    "TTC": 303.55
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1182,
+    "BottomRightY": 264,
+    "TopLeftX": 1102,
+    "TopLeftY": 86
+    },
+    "CenterX": 1142,
+    "CenterY": 175,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 57.57,
+    "ID": -1,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.64,
+    "PositionY": 4.06,
+    "PositionZ": 55.92,
+    "RealHeight": 5.00,
+    "RealWidth": 2.13,
+    "RelativeSpeed": -0.07,
+    "Score": 1.00,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 9,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.872000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 49.96,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.02,
+    "PositionY": 2.77,
+    "PositionZ": 49.92,
+    "RealHeight": 1.76,
+    "RealWidth": 0.71,
+    "RelativeSpeed": 0.87,
+    "Score": 0.96,
+    "TTC": 303.48
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1256,
+    "BottomRightY": 266,
+    "TopLeftX": 1066,
+    "TopLeftY": 86
+    },
+    "CenterX": 1161,
+    "CenterY": 176,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 55.45,
+    "ID": -1,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.61,
+    "PositionY": 3.88,
+    "PositionZ": 53.70,
+    "RealHeight": 4.87,
+    "RealWidth": 4.86,
+    "RelativeSpeed": -1.10,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1072,
+    "BottomRightY": 244,
+    "TopLeftX": 998,
+    "TopLeftY": 110
+    },
+    "CenterX": 1035,
+    "CenterY": 177,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 73.91,
+    "ID": -11,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.82,
+    "PositionY": 5.14,
+    "PositionZ": 72.60,
+    "RealHeight": 4.83,
+    "RealWidth": 2.56,
+    "RelativeSpeed": 3.54,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 934,
+    "BottomRightY": 228,
+    "TopLeftX": 886,
+    "TopLeftY": 140
+    },
+    "CenterX": 910,
+    "CenterY": 184,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 120.82,
+    "ID": -6,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 15.50,
+    "PositionY": 8.00,
+    "PositionZ": 119.81,
+    "RealHeight": 5.19,
+    "RealWidth": 2.74,
+    "RelativeSpeed": 0.26,
+    "Score": 1.00,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 10,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.906000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 49.99,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.02,
+    "PositionY": 2.77,
+    "PositionZ": 49.95,
+    "RealHeight": 1.76,
+    "RealWidth": 0.71,
+    "RelativeSpeed": 0.87,
+    "Score": 0.96,
+    "TTC": 303.48
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1254,
+    "BottomRightY": 252,
+    "TopLeftX": 1174,
+    "TopLeftY": 90
+    },
+    "CenterX": 1214,
+    "CenterY": 171,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 50.22,
+    "ID": -10,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.56,
+    "PositionY": 3.64,
+    "PositionZ": 48.35,
+    "RealHeight": 3.97,
+    "RealWidth": 1.84,
+    "RelativeSpeed": 0.00,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1182,
+    "BottomRightY": 264,
+    "TopLeftX": 1098,
+    "TopLeftY": 86
+    },
+    "CenterX": 1140,
+    "CenterY": 175,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 57.83,
+    "ID": -1,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.64,
+    "PositionY": 4.08,
+    "PositionZ": 56.19,
+    "RealHeight": 5.02,
+    "RealWidth": 2.25,
+    "RelativeSpeed": 0.16,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1052,
+    "BottomRightY": 230,
+    "TopLeftX": 960,
+    "TopLeftY": 126
+    },
+    "CenterX": 1006,
+    "CenterY": 178,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 83.65,
+    "ID": -4,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 14.51,
+    "PositionY": 5.78,
+    "PositionZ": 82.36,
+    "RealHeight": 4.25,
+    "RealWidth": 3.61,
+    "RelativeSpeed": 0.85,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 934,
+    "BottomRightY": 226,
+    "TopLeftX": 886,
+    "TopLeftY": 140
+    },
+    "CenterX": 910,
+    "CenterY": 183,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 120.56,
+    "ID": -6,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 15.46,
+    "PositionY": 8.04,
+    "PositionZ": 119.55,
+    "RealHeight": 5.06,
+    "RealWidth": 2.73,
+    "RelativeSpeed": 0.05,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 536,
+    "BottomRightY": 214,
+    "TopLeftX": 508,
+    "TopLeftY": 190
+    },
+    "CenterX": 522,
+    "CenterY": 202,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 144.78,
+    "ID": -8,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": -8.13,
+    "PositionY": 8.31,
+    "PositionZ": 144.54,
+    "RealHeight": 1.70,
+    "RealWidth": 1.93,
+    "RelativeSpeed": 1.36,
+    "Score": 1.00,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 11,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.939000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 170
+     },
+    "CenterX": 725,
+    "CenterY": 206,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 50.02,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.02,
+    "PositionY": 2.77,
+    "PositionZ": 49.98,
+    "RealHeight": 1.76,
+    "RealWidth": 0.71,
+    "RelativeSpeed": 0.87,
+    "Score": 0.96,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1254,
+    "BottomRightY": 254,
+    "TopLeftX": 1174,
+    "TopLeftY": 90
+    },
+    "CenterX": 1214,
+    "CenterY": 172,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 50.47,
+    "ID": -10,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.63,
+    "PositionY": 3.63,
+    "PositionZ": 48.58,
+    "RealHeight": 4.04,
+    "RealWidth": 1.85,
+    "RelativeSpeed": 0.12,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1182,
+    "BottomRightY": 264,
+    "TopLeftX": 1100,
+    "TopLeftY": 86
+    },
+    "CenterX": 1141,
+    "CenterY": 175,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 57.65,
+    "ID": -1,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.63,
+    "PositionY": 4.07,
+    "PositionZ": 56.01,
+    "RealHeight": 5.01,
+    "RealWidth": 2.19,
+    "RelativeSpeed": 0.07,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1106,
+    "BottomRightY": 250,
+    "TopLeftX": 940,
+    "TopLeftY": 102
+    },
+    "CenterX": 1023,
+    "CenterY": 176,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 73.02,
+    "ID": -11,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.24,
+    "PositionY": 5.12,
+    "PositionZ": 71.75,
+    "RealHeight": 5.27,
+    "RealWidth": 5.68,
+    "RelativeSpeed": 2.05,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 934,
+    "BottomRightY": 228,
+    "TopLeftX": 886,
+    "TopLeftY": 138
+    },
+    "CenterX": 910,
+    "CenterY": 183,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 120.06,
+    "ID": -6,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 15.40,
+    "PositionY": 8.00,
+    "PositionZ": 119.06,
+    "RealHeight": 5.27,
+    "RealWidth": 2.72,
+    "RelativeSpeed": -0.18,
+    "Score": 1.00,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 12,
+    "Sensor": "Vis",
+    "FrameTime": 1667820030.972000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 168
+     },
+    "CenterX": 725,
+    "CenterY": 205,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 50.05,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.03,
+    "PositionY": 2.80,
+    "PositionZ": 50.00,
+    "RealHeight": 1.81,
+    "RealWidth": 0.71,
+    "RelativeSpeed": 0.86,
+    "Score": 0.96,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1254,
+    "BottomRightY": 252,
+    "TopLeftX": 1168,
+    "TopLeftY": 84
+    },
+    "CenterX": 1211,
+    "CenterY": 168,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 50.45,
+    "ID": -10,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.55,
+    "PositionY": 3.73,
+    "PositionZ": 48.58,
+    "RealHeight": 4.13,
+    "RealWidth": 1.99,
+    "RelativeSpeed": 0.08,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1174,
+    "BottomRightY": 262,
+    "TopLeftX": 1086,
+    "TopLeftY": 86
+    },
+    "CenterX": 1130,
+    "CenterY": 174,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 59.31,
+    "ID": -1,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.72,
+    "PositionY": 4.21,
+    "PositionZ": 57.69,
+    "RealHeight": 5.09,
+    "RealWidth": 2.42,
+    "RelativeSpeed": 0.70,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1048,
+    "BottomRightY": 228,
+    "TopLeftX": 946,
+    "TopLeftY": 124
+    },
+    "CenterX": 997,
+    "CenterY": 176,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 85.38,
+    "ID": -4,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 14.45,
+    "PositionY": 5.98,
+    "PositionZ": 84.12,
+    "RealHeight": 4.33,
+    "RealWidth": 4.09,
+    "RelativeSpeed": 2.20,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 934,
+    "BottomRightY": 226,
+    "TopLeftX": 888,
+    "TopLeftY": 140
+    },
+    "CenterX": 911,
+    "CenterY": 183,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 121.16,
+    "ID": -6,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 15.60,
+    "PositionY": 8.08,
+    "PositionZ": 120.14,
+    "RealHeight": 5.09,
+    "RealWidth": 2.63,
+    "RelativeSpeed": 0.30,
+    "Score": 1.00,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 13,
+    "Sensor": "Vis",
+    "FrameTime": 1667820031.006000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 168
+     },
+    "CenterX": 725,
+    "CenterY": 205,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 50.08,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.03,
+    "PositionY": 2.80,
+    "PositionZ": 50.03,
+    "RealHeight": 1.81,
+    "RealWidth": 0.72,
+    "RelativeSpeed": 0.86,
+    "Score": 0.96,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1254,
+    "BottomRightY": 252,
+    "TopLeftX": 1170,
+    "TopLeftY": 78
+    },
+    "CenterX": 1212,
+    "CenterY": 165,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 50.24,
+    "ID": -10,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.52,
+    "PositionY": 3.79,
+    "PositionZ": 48.38,
+    "RealHeight": 4.26,
+    "RealWidth": 1.94,
+    "RelativeSpeed": -0.01,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1178,
+    "BottomRightY": 264,
+    "TopLeftX": 1092,
+    "TopLeftY": 86
+    },
+    "CenterX": 1135,
+    "CenterY": 175,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 58.37,
+    "ID": -1,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.63,
+    "PositionY": 4.12,
+    "PositionZ": 56.74,
+    "RealHeight": 5.07,
+    "RealWidth": 2.33,
+    "RelativeSpeed": 0.27,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1054,
+    "BottomRightY": 228,
+    "TopLeftX": 986,
+    "TopLeftY": 114
+    },
+    "CenterX": 1020,
+    "CenterY": 171,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 78.77,
+    "ID": -4,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 14.18,
+    "PositionY": 5.71,
+    "PositionZ": 77.47,
+    "RealHeight": 4.38,
+    "RealWidth": 2.51,
+    "RelativeSpeed": -1.36,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 936,
+    "BottomRightY": 230,
+    "TopLeftX": 884,
+    "TopLeftY": 138
+    },
+    "CenterX": 910,
+    "CenterY": 184,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 120.37,
+    "ID": -6,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 15.44,
+    "PositionY": 7.97,
+    "PositionZ": 119.37,
+    "RealHeight": 5.41,
+    "RealWidth": 2.96,
+    "RelativeSpeed": -0.05,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 540,
+    "BottomRightY": 218,
+    "TopLeftX": 502,
+    "TopLeftY": 188
+    },
+    "CenterX": 521,
+    "CenterY": 203,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 142.57,
+    "ID": -8,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": -8.08,
+    "PositionY": 8.11,
+    "PositionZ": 142.34,
+    "RealHeight": 2.09,
+    "RealWidth": 2.58,
+    "RelativeSpeed": -0.50,
+    "Score": 1.00,
+    "TTC": 1000.00
+    }
+    ]
+    },
+    {
+    "FrameIndex": 14,
+    "Sensor": "Vis",
+    "FrameTime": 1667820031.039000 , 
+    "Obstacles": [
+    
+     {
+     "BoundBox": {
+     "BottomRightX": 740,
+     "BottomRightY": 242,
+     "TopLeftX": 710,
+     "TopLeftY": 166
+     },
+    "CenterX": 725,
+    "CenterY": 204,
+    "Class": "Pedestrian",
+    "DangerLevel": 0,
+    "Distance": 50.10,
+    "ID": 0,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 2.03,
+    "PositionY": 2.83,
+    "PositionZ": 50.06,
+    "RealHeight": 1.86,
+    "RealWidth": 0.72,
+    "RelativeSpeed": 0.86,
+    "Score": 0.96,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1254,
+    "BottomRightY": 252,
+    "TopLeftX": 1168,
+    "TopLeftY": 90
+    },
+    "CenterX": 1211,
+    "CenterY": 171,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 50.64,
+    "ID": -10,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.60,
+    "PositionY": 3.67,
+    "PositionZ": 48.77,
+    "RealHeight": 4.00,
+    "RealWidth": 2.00,
+    "RelativeSpeed": 0.15,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1174,
+    "BottomRightY": 262,
+    "TopLeftX": 1086,
+    "TopLeftY": 86
+    },
+    "CenterX": 1130,
+    "CenterY": 174,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 59.58,
+    "ID": -1,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 13.78,
+    "PositionY": 4.23,
+    "PositionZ": 57.95,
+    "RealHeight": 5.12,
+    "RealWidth": 2.43,
+    "RelativeSpeed": 0.69,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 1060,
+    "BottomRightY": 232,
+    "TopLeftX": 942,
+    "TopLeftY": 124
+    },
+    "CenterX": 1001,
+    "CenterY": 178,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 85.35,
+    "ID": -4,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 14.60,
+    "PositionY": 5.90,
+    "PositionZ": 84.05,
+    "RealHeight": 4.50,
+    "RealWidth": 4.73,
+    "RelativeSpeed": 1.81,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 936,
+    "BottomRightY": 228,
+    "TopLeftX": 882,
+    "TopLeftY": 138
+    },
+    "CenterX": 909,
+    "CenterY": 183,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 120.79,
+    "ID": -6,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": 15.44,
+    "PositionY": 8.05,
+    "PositionZ": 119.79,
+    "RealHeight": 5.31,
+    "RealWidth": 3.08,
+    "RelativeSpeed": 0.12,
+    "Score": 1.00,
+    "TTC": 1000.00
+    },
+    {
+     "BoundBox": {
+    "BottomRightX": 550,
+    "BottomRightY": 208,
+    "TopLeftX": 514,
+    "TopLeftY": 192
+    },
+    "CenterX": 532,
+    "CenterY": 200,
+    "Class": "Object",
+    "DangerLevel": 0,
+    "Distance": 145.75,
+    "ID": -8,
+    "OnPath": false,
+    "OnRoad": true,
+    "PositionX": -7.50,
+    "PositionY": 8.51,
+    "PositionZ": 145.55,
+    "RealHeight": 1.14,
+    "RealWidth": 2.50,
+    "RelativeSpeed": 1.35,
+    "Score": 1.00,
+    "TTC": 1000.00
+    }
+    ]
+    }
+]}

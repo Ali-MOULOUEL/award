@@ -1,0 +1,9 @@
+must_fill_categories: false
+errors:
+  # 0 success
+  platform_lifting_failure:
+    id: 1
+    msg: "Failed to lift the platform"
+  platform_height_mismatch:
+    id: 2
+    msg: "Current platform height does not match heigth setpoint"

@@ -1,0 +1,950 @@
+must_fill_categories: true
+errors:
+  # 0 success
+  mrs_front_detection_estop:
+    id: 1
+    msg: "EZ Shield (SCES B): Emergency Stop due to MRS Front detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mrs_rear_detection_estop:
+    id: 2
+    msg: "EZ Shield (SCES B): Emergency Stop due to MRS Rear detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mrs_front_right_detection_estop:
+    id: 3
+    msg: "EZ Shield (SCES B): Emergency Stop due to MRS Front Right detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mcs_front_left_detection_estop:
+    id: 4
+    msg: "EZ Shield (SCES B): Emergency Stop due to MCS Front Left detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  scala_front_left_detection_estop:
+    id: 5
+    msg: "EZ Shield (SCES B): Emergency Stop due to SCALA Front Left detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  scala_front_right_detection_estop:
+    id: 6
+    msg: "EZ Shield (SCES B): Emergency Stop due to SCALA Front Right detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  scala_front_detection_estop:
+    id: 7
+    msg: "EZ Shield (SCES B): Emergency Stop due to SCALA Front detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  scala_lateral_left_detection_estop:
+    id: 8
+    msg: "EZ Shield (SCES B): Emergency Stop due to SCALA Lateral Left detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  scala_lateral_right_detection_estop:
+    id: 9
+    msg: "EZ Shield (SCES B): Emergency Stop due to SCALA Lateral Right detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  unknown_estop:
+    id: 10
+    msg: "EZ Shield (SCES B): Emergency Stop (unknown reason)"
+    mnemonic: "s_MECU_F_SCES_B_No_Obstacle_Detected"
+    categories: [emergency.safety_chain]
+  mrs_front_detection_sstop:
+    id: 11
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front detection"
+    categories: [soft_stop.sces_B]
+  mrs_rear_detection_sstop:
+    id: 12
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear detection"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_detection_sstop:
+    id: 13
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right detection"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_detection_sstop:
+    id: 14
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left detection"
+    categories: [soft_stop.sces_B]
+  scala_front_left_detection_sstop:
+    id: 15
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left detection"
+    categories: [soft_stop.sces_B]
+  scala_front_right_detection_sstop:
+    id: 16
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right detection"
+    categories: [soft_stop.sces_B]
+  scala_front_detection_sstop:
+    id: 17
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front detection"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_detection_sstop:
+    id: 18
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left detection"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_detection_sstop:
+    id: 19
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right detection"
+    categories: [soft_stop.sces_B]
+  mrs_front_invalid_configuration_sstop:
+    id: 20
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front invalid configuration"
+    categories: [soft_stop.sces_B]
+  mrs_rear_invalid_configuration_sstop:
+    id: 21
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear invalid configuration"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_invalid_configuration_sstop:
+    id: 22
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right invalid configuration"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_invalid_configuration_sstop:
+    id: 23
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left invalid configuration"
+    categories: [soft_stop.sces_B]
+  scala_front_left_invalid_configuration_sstop:
+    id: 24
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left invalid configuration"
+    categories: [soft_stop.sces_B]
+  scala_front_right_invalid_configuration_sstop:
+    id: 25
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right invalid configuration"
+    categories: [soft_stop.sces_B]
+  scala_front_invalid_configuration_sstop:
+    id: 26
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front invalid configuration"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_invalid_configuration_sstop:
+    id: 27
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left invalid configuration"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_invalid_configuration_sstop:
+    id: 28
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right invalid configuration"
+    categories: [soft_stop.sces_B]
+  mrs_front_corrupted_data_sstop:
+    id: 29
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front corrupted data"
+    categories: [soft_stop.sces_B]
+  mrs_rear_corrupted_data_sstop:
+    id: 30
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear corrupted data"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_corrupted_data_sstop:
+    id: 31
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right corrupted data"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_corrupted_data_sstop:
+    id: 32
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left corrupted data"
+    categories: [soft_stop.sces_B]
+  scala_front_left_corrupted_data_sstop:
+    id: 33
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left corrupted data"
+    categories: [soft_stop.sces_B]
+  scala_front_right_corrupted_data_sstop:
+    id: 34
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right corrupted data"
+    categories: [soft_stop.sces_B]
+  scala_front_corrupted_data_sstop:
+    id: 35
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front corrupted data"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_corrupted_data_sstop:
+    id: 36
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left corrupted data"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_corrupted_data_sstop:
+    id: 37
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right corrupted data"
+    categories: [soft_stop.sces_B]
+  mrs_front_invalid_data_sstop:
+    id: 38
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front invalid data"
+    categories: [soft_stop.sces_B]
+  mrs_rear_invalid_data_sstop:
+    id: 39
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear invalid data"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_invalid_data_sstop:
+    id: 40
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right invalid data"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_invalid_data_sstop:
+    id: 41
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left invalid data"
+    categories: [soft_stop.sces_B]
+  scala_front_left_invalid_data_sstop:
+    id: 42
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left invalid data"
+    categories: [soft_stop.sces_B]
+  scala_front_right_invalid_data_sstop:
+    id: 43
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right invalid data"
+    categories: [soft_stop.sces_B]
+  scala_front_invalid_data_sstop:
+    id: 44
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front invalid data"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_invalid_data_sstop:
+    id: 45
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left invalid data"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_invalid_data_sstop:
+    id: 46
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right invalid data"
+    categories: [soft_stop.sces_B]
+  mrs_front_timeout_sstop:
+    id: 47
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front timeout"
+    categories: [soft_stop.sces_B]
+  mrs_rear_timeout_sstop:
+    id: 48
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear timeout"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_timeout_sstop:
+    id: 49
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right timeout"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_timeout_sstop:
+    id: 50
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left timeout"
+    categories: [soft_stop.sces_B]
+  scala_front_left_timeout_sstop:
+    id: 51
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left timeout"
+    categories: [soft_stop.sces_B]
+  scala_front_right_timeout_sstop:
+    id: 52
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right timeout"
+    categories: [soft_stop.sces_B]
+  scala_front_timeout_sstop:
+    id: 53
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front timeout"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_timeout_sstop:
+    id: 54
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left timeout"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_timeout_sstop:
+    id: 55
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right timeout"
+    categories: [soft_stop.sces_B]
+  mrs_front_overtalk_sstop:
+    id: 56
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front overtalk"
+    categories: [soft_stop.sces_B]
+  mrs_rear_overtalk_sstop:
+    id: 57
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear overtalk"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_overtalk_sstop:
+    id: 58
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right overtalk"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_overtalk_sstop:
+    id: 59
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left overtalk"
+    categories: [soft_stop.sces_B]
+  scala_front_left_overtalk_sstop:
+    id: 60
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left overtalk"
+    categories: [soft_stop.sces_B]
+  scala_front_right_overtalk_sstop:
+    id: 61
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right overtalk"
+    categories: [soft_stop.sces_B]
+  scala_front_overtalk_sstop:
+    id: 62
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front overtalk"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_overtalk_sstop:
+    id: 63
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left overtalk"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_overtalk_sstop:
+    id: 64
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right overtalk"
+    categories: [soft_stop.sces_B]
+  mrs_front_protocol_error_sstop:
+    id: 65
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front protocol error"
+    categories: [soft_stop.sces_B]
+  mrs_rear_protocol_error_sstop:
+    id: 66
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear protocol error"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_protocol_error_sstop:
+    id: 67
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right protocol error"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_protocol_error_sstop:
+    id: 68
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left protocol error"
+    categories: [soft_stop.sces_B]
+  scala_front_left_protocol_error_sstop:
+    id: 69
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left protocol error"
+    categories: [soft_stop.sces_B]
+  scala_front_right_protocol_error_sstop:
+    id: 70
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right protocol error"
+    categories: [soft_stop.sces_B]
+  scala_front_protocol_error_sstop:
+    id: 71
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front protocol error"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_protocol_error_sstop:
+    id: 72
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left protocol error"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_protocol_error_sstop:
+    id: 73
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right protocol error"
+    categories: [soft_stop.sces_B]
+  speed_coder_invalid_data_sstop:
+    id: 74
+    msg: "EZ Shield (SCES B): Soft Stop due to invalid data from speed coder"
+    categories: [soft_stop.sces_B]
+  front_steering_invalid_data_sstop:
+    id: 75
+    msg: "EZ Shield (SCES B): Soft Stop due to invalid data from front steering"
+    categories: [soft_stop.sces_B]
+  rear_steering_invalid_data_sstop:
+    id: 76
+    msg: "EZ Shield (SCES B): Soft Stop due to invalid data from rear steering"
+    categories: [soft_stop.sces_B]
+  lateral_acceleration_exceeded_sstop:
+    id: 77
+    msg: "EZ Shield (SCES B): Soft Stop due to lateral acceleration exceeding"
+    categories: [soft_stop.sces_B]
+  speed_exceeded_sstop:
+    id: 78
+    msg: "EZ Shield (SCES B): Soft Stop due to speed exceeding"
+    categories: [soft_stop.sces_B]
+  front_steering_max_steering_exceeded_sstop:
+    id: 79
+    msg: "EZ Shield (SCES B): Soft Stop due to front steering command exceeding"
+    categories: [soft_stop.sces_B]
+  rear_steering_max_steering_exceeded_sstop:
+    id: 80
+    msg: "EZ Shield (SCES B): Soft Stop due to rear steering command exceeding"
+    categories: [soft_stop.sces_B]
+  front_steering_max_speed_exceeded_sstop:
+    id: 81
+    msg: "EZ Shield (SCES B): Soft Stop due to front steering speed exceeding"
+    categories: [soft_stop.sces_B]
+  rear_steering_max_speed_exceeded_sstop:
+    id: 82
+    msg: "EZ Shield (SCES B): Soft Stop due to rear steering speed exceeding"
+    categories: [soft_stop.sces_B]
+  internal_failure_sstop:
+    id: 83
+    msg: "EZ Shield (SCES B): Soft Stop due to unexpected internal failure"
+    categories: [soft_stop.sces_B]
+  unknown_sstop:
+    id: 84
+    msg: "EZ Shield (SCES B): Soft Stop (unknown reason)"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_detection_estop:
+    id: 85
+    msg: "EZ Shield (SCES B): Emergency Stop due to MRS Front Left detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mrs_front_left_detection_sstop:
+    id: 86
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left detection"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_invalid_configuration_sstop:
+    id: 87
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left invalid configuration"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_corrupted_data_sstop:
+    id: 88
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left corrupted data"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_invalid_data_sstop:
+    id: 89
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left invalid data"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_timeout_sstop:
+    id: 90
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left timeout"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_overtalk_sstop:
+    id: 91
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left overtalk"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_protocol_error_sstop:
+    id: 92
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left protocol error"
+    categories: [soft_stop.sces_B]
+  ftc_rtc_crosscheck_failure_sstop:
+    id: 93
+    msg: "EZ Shield (SCES B): Soft Stop due to FTC/RTC crosscheck failure"
+    categories: [soft_stop.sces_B]
+  ftc_plc_crosscheck_failure_sstop:
+    id: 94
+    msg: "EZ Shield (SCES B): Soft Stop due to FTC/PLC crosscheck failure"
+    categories: [soft_stop.sces_B]
+  path_dl_no_rmf:
+    id: 95
+    msg: "EZ Shield (SCES B): PathDL no RMF monitoring default"
+    categories: [soft_stop.sces_B]
+  path_dl_download:
+    id: 96
+    msg: "EZ Shield (SCES B): PathDL download error during the transfer between EZDrive and SCES"
+    categories: [soft_stop.sces_B]
+  path_dl_signature:
+    id: 97
+    msg: "EZ Shield (SCES B): PathDL RMF's signature is incorrect"
+    categories: [soft_stop.sces_B]
+  path_dl_parsing:
+    id: 98
+    msg: "EZ Shield (SCES B): PathDL error while parsing"
+    categories: [soft_stop.sces_B]
+  path_dl_refresh:
+    id: 99
+    msg: "EZ Shield (SCES B): PathDL refresh error RMF info is no more received from EZDrive"
+    categories: [soft_stop.sces_B]
+  path_dl_mismatch:
+    id: 100
+    msg: "EZ Shield (SCES B): PathDL mismatch error RMF in SCES is not the same than in EZDrive"
+    categories: [soft_stop.sces_B]
+  fsc_rsc_crosscheck_failure_sstop:
+    id: 101
+    msg: "EZ Shield (SCES B): Soft Stop due to FSC/RSC crosscheck failure"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_detection_estop:
+    id: 102
+    msg: "EZ Shield (SCES B): Emergency Stop due to MCS Front Right detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mcs_front_right_detection_sstop:
+    id: 103
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right detection"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_invalid_configuration_sstop:
+    id: 104
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right invalid configuration"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_corrupted_data_sstop:
+    id: 105
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right corrupted data"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_invalid_data_sstop:
+    id: 106
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right invalid data"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_timeout_sstop:
+    id: 107
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right timeout"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_overtalk_sstop:
+    id: 108
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right overtalk"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_protocol_error_sstop:
+    id: 109
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right protocol error"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_detection_estop:
+    id: 110
+    msg: "EZ Shield (SCES B): Emergency Stop due to MCS Rear Left detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mcs_rear_left_detection_sstop:
+    id: 111
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left detection"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_invalid_configuration_sstop:
+    id: 112
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left invalid configuration"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_corrupted_data_sstop:
+    id: 113
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left corrupted data"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_invalid_data_sstop:
+    id: 114
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left invalid data"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_timeout_sstop:
+    id: 115
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left timeout"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_overtalk_sstop:
+    id: 116
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left overtalk"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_protocol_error_sstop:
+    id: 117
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left protocol error"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_detection_estop:
+    id: 118
+    msg: "EZ Shield (SCES B): Emergency Stop due to MCS Rear Right detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mcs_rear_right_detection_sstop:
+    id: 119
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right detection"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_invalid_configuration_sstop:
+    id: 120
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right invalid configuration"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_corrupted_data_sstop:
+    id: 121
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right corrupted data"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_invalid_data_sstop:
+    id: 122
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right invalid data"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_timeout_sstop:
+    id: 123
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right timeout"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_overtalk_sstop:
+    id: 124
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right overtalk"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_protocol_error_sstop:
+    id: 125
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right protocol error"
+    categories: [soft_stop.sces_B]
+  localization_error_sstop:
+    id: 126
+    msg: "EZ Shield (SCES B): Soft Stop due to Localization Consistency Monitoring Error "
+    categories: [soft_stop.sces_B]
+  trajectory_deviation_monitoring_unavailable_estop:
+    id: 127
+    msg: "EZ Shield (SCES B): Emergency Stop due to Unavailable Trajectory Deviation Monitoring"
+    categories: [emergency.sces_B]
+  trajectory_deviation_detected_estop:
+    id: 128
+    msg: "EZ Shield (SCES B): Emergency Stop due to Detected Trajectory Deviation"
+    categories: [emergency.sces_B]
+  traffic_light_monitoring_error_estop:
+    id: 129
+    msg: "EZ Shield (SCES B): Emergency Stop due to Traffic Light Monitoring Error"
+    categories: [emergency.sces_B]
+  trajectory_deviation_monitoring_unavailable_sstop:
+    id: 130
+    msg: "EZ Shield (SCES B): Soft Stop due to Unavailable Trajectory Deviation Monitoring"
+    categories: [soft_stop.sces_B]
+  trajectory_deviation_detected_sstop:
+    id: 131
+    msg: "EZ Shield (SCES B): Soft Stop due to Detected Trajectory Deviation (deviates or will do if it drives again)"
+    categories: [soft_stop.sces_B]
+  navigation_target_monitoring_no_target_sstop:
+    id: 132
+    msg: "EZ Shield (SCES B): Soft Stop due to Navigation Target Monitoring (No target provided)"
+    categories: [soft_stop.sces_B]
+  navigation_target_monitoring_lost_sstop:
+    id: 133
+    msg: "EZ Shield (SCES B): Soft Stop due to Navigation Target Monitoring (Vehicle too far from RMF)"
+    categories: [soft_stop.sces_B]
+  navigation_target_monitoring_unaccurate_loc_sstop:
+    id: 134
+    msg: "EZ Shield (SCES B): Soft Stop due to Navigation Target Monitoring (Unaccurate localization)"
+    categories: [soft_stop.sces_B]
+  navigation_target_no_target_sstop:
+    id: 135
+    msg: "EZ Shield (SCES B): No Navigation Target provided by EZDrive"
+    categories: [soft_stop.sces_B]
+  navigation_target_refresh_sstop:
+    id: 136
+    msg: "EZ Shield (SCES B): Navigation Target information is no more received from EZDrive"
+    categories: [soft_stop.sces_B]
+  navigation_target_rejected_sstop:
+    id: 137
+    msg: "EZ Shield (SCES B): Navigation Target provided has been rejected (Vehicle not found)"
+    categories: [soft_stop.sces_B]
+  navigation_target_lost_sstop:
+    id: 138
+    msg: "EZ Shield (SCES B): Navigation Target provided has been rejected (Vehicle too far from RMF)"
+    categories: [soft_stop.sces_B]
+  navigation_target_path_change_sstop:
+    id: 139
+    msg: "EZ Shield (SCES B): Navigation Target provided has been rejected (Vehicle too close from path change position)"
+    categories: [soft_stop.sces_B]
+  fsc_main_sfty_crosscheck_failure_sstop:
+    id: 140
+    msg: "EZ Shield (SCES B): Soft Stop due to FSC Danfoss Main/Safety controllers crosscheck failure"
+    categories: [soft_stop.sces_B]
+  left_right_speed_crosscheck_failure_sstop:
+    id: 141
+    msg: "EZ Shield (SCES B): Soft Stop due to left/right speed crosscheck failure"
+    categories: [soft_stop.sces_B]
+  maximum_speed_variation_tolerance_exceeded_sstop:
+    id: 142
+    msg: "EZ Shield (SCES B): Soft Stop due to exceeded maximum speed variation tolerance"
+    categories: [soft_stop.sces_B]
+  navigation_target_received_position_sstop:
+    id: 143
+    msg: "EZ Shield (SCES B): Navigation Target provided has been rejected (Inconsistency between EZDrive and EZShield positions)"
+    categories: [soft_stop.sces_B]
+  mrs_front_frozen_sstop:
+    id: 144
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mrs_rear_frozen_sstop:
+    id: 145
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mrs_front_right_frozen_sstop:
+    id: 146
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Right frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mcs_front_left_frozen_sstop:
+    id: 147
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Left frozen point cloud"
+    categories: [soft_stop.sces_B]
+  scala_front_left_frozen_sstop:
+    id: 148
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Left frozen point cloud"
+    categories: [soft_stop.sces_B]
+  scala_front_right_frozen_sstop:
+    id: 149
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front Right frozen point cloud"
+    categories: [soft_stop.sces_B]
+  scala_front_frozen_sstop:
+    id: 150
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Front frozen point cloud"
+    categories: [soft_stop.sces_B]
+  scala_lateral_left_frozen_sstop:
+    id: 151
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Left frozen point cloud"
+    categories: [soft_stop.sces_B]
+  scala_lateral_right_frozen_sstop:
+    id: 152
+    msg: "EZ Shield (SCES B): Soft Stop due to SCALA Lateral Right frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mrs_front_left_frozen_sstop:
+    id: 153
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Front Left frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mcs_front_right_frozen_sstop:
+    id: 154
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Front Right frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mcs_rear_left_frozen_sstop:
+    id: 155
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Left frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mcs_rear_right_frozen_sstop:
+    id: 156
+    msg: "EZ Shield (SCES B): Soft Stop due to MCS Rear Right frozen point cloud"
+    categories: [soft_stop.sces_B]
+  ftc_coders_crosscheck_failure_sstop:
+    id: 157
+    msg: "EZ Shield (SCES B): Soft Stop due to FTC/Coders crosscheck failure"
+    categories: [soft_stop.sces_B]
+  traffic_light_monitoring_sstop:
+    id: 158
+    msg: "EZ Shield (SCES B): Soft Stop due to Traffic Light Monitoring error"
+    categories: [soft_stop.sces_B]
+  speed_selection_estop:
+    id: 159
+    msg: "EZ Shield (SCES B): Emergency Stop due to failures on both FTC/RTC and coders speeds"
+    categories: [emergency.sces_B]
+  mrs_rear_right_detection_estop:
+    id: 160
+    msg: "EZ Shield (SCES B): Emergency Stop due to MRS Rear Right detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mrs_rear_right_detection_sstop:
+    id: 161
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right detection"
+    categories: [soft_stop.sces_B]
+  mrs_rear_right_invalid_configuration_sstop:
+    id: 162
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right invalid configuration"
+    categories: [soft_stop.sces_B]
+  mrs_rear_right_corrupted_data_sstop:
+    id: 163
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right corrupted data"
+    categories: [soft_stop.sces_B]
+  mrs_rear_right_invalid_data_sstop:
+    id: 164
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right invalid data"
+    categories: [soft_stop.sces_B]
+  mrs_rear_right_timeout_sstop:
+    id: 165
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right timeout"
+    categories: [soft_stop.sces_B]
+  mrs_rear_right_overtalk_sstop:
+    id: 166
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right overtalk"
+    categories: [soft_stop.sces_B]
+  mrs_rear_right_protocol_error_sstop:
+    id: 167
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right protocol error"
+    categories: [soft_stop.sces_B]
+  mrs_rear_right_frozen_sstop:
+    id: 168
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Right frozen point cloud"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_detection_estop:
+    id: 169
+    msg: "EZ Shield (SCES B): Emergency Stop due to MRS Rear Left detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  mrs_rear_left_detection_sstop:
+    id: 170
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left detection"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_invalid_configuration_sstop:
+    id: 171
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left invalid configuration"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_corrupted_data_sstop:
+    id: 172
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left corrupted data"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_invalid_data_sstop:
+    id: 173
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left invalid data"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_timeout_sstop:
+    id: 174
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left timeout"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_overtalk_sstop:
+    id: 175
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left overtalk"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_protocol_error_sstop:
+    id: 176
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left protocol error"
+    categories: [soft_stop.sces_B]
+  mrs_rear_left_frozen_sstop:
+    id: 177
+    msg: "EZ Shield (SCES B): Soft Stop due to MRS Rear Left frozen point cloud"
+    categories: [soft_stop.sces_B]
+  trajectory_deviation_detected_out_of_lane_estop:
+    id: 178
+    msg: "EZ Shield (SCES B): Emergency Stop due to Detected Trajectory Deviation (Out of Lane area)"
+    categories: [emergency.sces_B]
+  trajectory_deviation_detected_out_of_lane_sstop:
+    id: 179
+    msg: "EZ Shield (SCES B): Soft Stop due to Trajectory Deviation Deviation (Out of Lane area)"
+    categories: [soft_stop.sces_B]
+  trajectory_deviation_detected_uncertainty_sstop:
+    id: 180
+    msg: "EZ Shield (SCES B): Soft Stop due to Trajectory Deviation Deviation (Localization uncertainty)"
+    categories: [soft_stop.sces_B]
+  ods_front_left_detection_estop:
+    id: 181
+    msg: "EZ Shield (SCES B): Emergency Stop due to ODS Front Left detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  ods_front_left_detection_sstop:
+    id: 182
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left detection"
+    categories: [soft_stop.sces_B]
+  ods_front_left_invalid_configuration_sstop:
+    id: 183
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left invalid configuration"
+    categories: [soft_stop.sces_B]
+  ods_front_left_corrupted_data_sstop:
+    id: 184
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left corrupted data"
+    categories: [soft_stop.sces_B]
+  ods_front_left_invalid_data_sstop:
+    id: 185
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left invalid data"
+    categories: [soft_stop.sces_B]
+  ods_front_left_timeout_sstop:
+    id: 186
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left timeout"
+    categories: [soft_stop.sces_B]
+  ods_front_left_overtalk_sstop:
+    id: 187
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left overtalk"
+    categories: [soft_stop.sces_B]
+  ods_front_left_protocol_error_sstop:
+    id: 188
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left protocol error"
+    categories: [soft_stop.sces_B]
+  ods_front_left_frozen_sstop:
+    id: 189
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Left frozen point cloud"
+    categories: [soft_stop.sces_B]
+  ods_front_right_detection_estop:
+    id: 190
+    msg: "EZ Shield (SCES B): Emergency Stop due to ODS Front Right detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  ods_front_right_detection_sstop:
+    id: 191
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right detection"
+    categories: [soft_stop.sces_B]
+  ods_front_right_invalid_configuration_sstop:
+    id: 192
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right invalid configuration"
+    categories: [soft_stop.sces_B]
+  ods_front_right_corrupted_data_sstop:
+    id: 193
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right corrupted data"
+    categories: [soft_stop.sces_B]
+  ods_front_right_invalid_data_sstop:
+    id: 194
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right invalid data"
+    categories: [soft_stop.sces_B]
+  ods_front_right_timeout_sstop:
+    id: 195
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right timeout"
+    categories: [soft_stop.sces_B]
+  ods_front_right_overtalk_sstop:
+    id: 196
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right overtalk"
+    categories: [soft_stop.sces_B]
+  ods_front_right_protocol_error_sstop:
+    id: 197
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right protocol error"
+    categories: [soft_stop.sces_B]
+  ods_front_right_frozen_sstop:
+    id: 198
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Front Right frozen point cloud"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_detection_estop:
+    id: 199
+    msg: "EZ Shield (SCES B): Emergency Stop due to ODS Rear Center detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  ods_rear_center_detection_sstop:
+    id: 200
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center detection"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_invalid_configuration_sstop:
+    id: 201
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center invalid configuration"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_corrupted_data_sstop:
+    id: 202
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center corrupted data"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_invalid_data_sstop:
+    id: 203
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center invalid data"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_timeout_sstop:
+    id: 204
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center timeout"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_overtalk_sstop:
+    id: 205
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center overtalk"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_protocol_error_sstop:
+    id: 206
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center protocol error"
+    categories: [soft_stop.sces_B]
+  ods_rear_center_frozen_sstop:
+    id: 207
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Rear Center frozen point cloud"
+    categories: [soft_stop.sces_B]
+  ods_cabin_detection_estop:
+    id: 208
+    msg: "EZ Shield (SCES B): Emergency Stop due to ODS Cabin detection"
+    categories: [emergency.sces_B_obstacle_detection]
+  ods_cabin_detection_sstop:
+    id: 209
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin detection"
+    categories: [soft_stop.sces_B]
+  ods_cabin_invalid_configuration_sstop:
+    id: 210
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin invalid configuration"
+    categories: [soft_stop.sces_B]
+  ods_cabin_corrupted_data_sstop:
+    id: 211
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin corrupted data"
+    categories: [soft_stop.sces_B]
+  ods_cabin_invalid_data_sstop:
+    id: 212
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin invalid data"
+    categories: [soft_stop.sces_B]
+  ods_cabin_timeout_sstop:
+    id: 213
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin timeout"
+    categories: [soft_stop.sces_B]
+  ods_cabin_overtalk_sstop:
+    id: 214
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin overtalk"
+    categories: [soft_stop.sces_B]
+  ods_cabin_protocol_error_sstop:
+    id: 215
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin protocol error"
+    categories: [soft_stop.sces_B]
+  ods_cabin_frozen_sstop:
+    id: 216
+    msg: "EZ Shield (SCES B): Soft Stop due to ODS Cabin frozen point cloud"
+    categories: [soft_stop.sces_B]
+
+  # EZShield errors declared by EZMove (based on frame 0x514 or 0x26 informations) -
+  # Temporary error causes, this part will be deleted with step 2 of SOL-1529
+
+  # estops
+  obstacle_detected_estop:
+    id: 501
+    msg: "EZ Shield (SCES B): Emergency stop due to obstacle detection while moving"
+    categories: [emergency.sces_B]
+  odometry_estop:
+    id: 502
+    msg: "EZ Shield (SCES B): Emergency stop due to multiple odometry monitoring error"
+    categories: [emergency.sces_B]
+  internal_error_estop:
+    id: 503
+    msg: "EZ Shield (SCES B): Emergency stop due to unexpected internal error"
+    categories: [emergency.sces_B]
+  traffic_light_estop:
+    id: 504
+    msg: "EZ Shield (SCES B): Emergency stop due to traffic light monitoring error"
+    categories: [emergency.sces_B]
+  vehicle_deviation_estop:
+    id: 505
+    msg: "EZ Shield (SCES B): Emergency stop due to detected trajectory deviation"
+    categories: [emergency.sces_B]
+  RMF_estop:
+    id: 506
+    msg: "EZ Shield (SCES B): Emergency stop due to missing or faulty RMF"
+    categories: [emergency.sces_B]
+  section_overspeed_estop:
+    id: 507
+    msg: "EZ Shield (SCES B): Emergency stop due to persistent section overspeed detected"
+    categories: [emergency.sces_B]
+  # sstops
+  obstacle_detected_sstop:
+    id: 511
+    msg: "EZ Shield (SCES B): Vehicle stopped due to obstacle detection (vehicle stopped)"
+    categories: [soft_stop.sces_B]
+  blind_sensor_sstop:
+    id: 512
+    msg: "EZ Shield (SCES B): Vehicle stopped due to lack of lidar perception"
+    categories: [soft_stop.sces_B]
+  faulty_MRS_sstop:
+    id: 513
+    msg: "EZ Shield (SCES B): Vehicle stopped due to lidar monitoring error"
+    categories: [soft_stop.sces_B]
+  odometry_sstop:
+    id: 514
+    msg: "EZ Shield (SCES B): Vehicle stopped due to odometry monitoring error"
+    categories: [soft_stop.sces_B]
+  critical_component_sstop:
+    id: 515
+    msg: "EZ Shield (SCES B): Vehicle stopped due to system component monitoring error"
+    categories: [soft_stop.sces_B]
+  traffic_light_sstop:
+    id: 516
+    msg: "EZ Shield (SCES B): Vehicle stopped due to traffic light monitoring error"
+    categories: [soft_stop.sces_B]
+  vehicle_deviation_sstop:
+    id: 517
+    msg: "EZ Shield (SCES B): Vehicle stopped due to detected trajectory deviation"
+    categories: [soft_stop.sces_B]
+  localization_sstop:
+    id: 518
+    msg: "EZ Shield (SCES B): Vehicle stopped due to localization monitoring error"
+    categories: [soft_stop.sces_B]
+  RMF_sstop:
+    id: 519
+    msg: "EZ Shield (SCES B): Vehicle stopped due to RMF processing error"
+    categories: [soft_stop.sces_B]
+  navigation_target_sstop:
+    id: 520
+    msg: "EZ Shield (SCES B): Vehicle stopped due to navigation target error"
+    categories: [soft_stop.sces_B]
+  navigation_monitoring_sstop:
+    id: 521
+    msg: "EZ Shield (SCES B): Vehicle stopped due to navigation target monitoring error"
+    categories: [soft_stop.sces_B]
+  section_overspeed_sstop:
+    id: 522
+    msg: "EZ Shield (SCES B): Vehicle stopped due to section overspeed detected"
+    categories: [soft_stop.sces_B]

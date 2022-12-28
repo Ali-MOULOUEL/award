@@ -1,0 +1,8 @@
+# goal
+IntersectionZone[] zones
+---
+# res
+---
+# feedback
+bool clear
+bool observable

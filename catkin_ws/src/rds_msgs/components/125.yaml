@@ -1,0 +1,17 @@
+must_fill_categories: false
+errors:
+  connecting:
+    id: 1
+    msg: "connecting"
+  lost:
+    id: 2
+    msg: "connection lost"
+  auth_failed:
+    id: 3
+    msg: "authorization failed"
+  auth_forbidden:
+    id: 4
+    msg: "access forbidden"
+  ping_timeout:
+    id: 5
+    msg: "ping latency too high"

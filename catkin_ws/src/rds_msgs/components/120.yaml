@@ -1,0 +1,20 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  unknown_error:
+    id: 1
+    msg: "unknown camera driver error"
+  connexion_error:
+    id: 2
+    msg: "connexion to the camera failed. Make sure that the IP address is correct"
+  image_reception_timeout:
+    id: 3
+    msg: "no image received. If the camera uses hardware trigger, the synchronization cable may be faulty or missing"
+  image_consistency_error:
+    id: 4
+    msg: "incomplete or invalid image received. Available bandwith may not be sufficient regarding the required framerate and network parameters"
+  inconsistent_embedded_info:
+    id: 5
+    msg: "image meta data do not match embedded information."

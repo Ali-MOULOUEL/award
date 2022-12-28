@@ -1,0 +1,26 @@
+must_fill_categories: false
+errors:
+  undefined:
+    id: 1
+    msg: "Not defined, see error message (if any)"
+  file_not_found:
+    id: 2
+    msg: "tftp: file not found"
+  access_violation:
+    id: 3
+    msg: "tftp: access violation"
+  disk_full:
+    id: 4
+    msg: "tftp: disk full or allocation exceeded"
+  illegal_operation:
+    id: 5
+    msg: "tftp: illegal operation"
+  unknown_id:
+    id: 6
+    msg: "tftp: unknown transfer id"
+  file_exists:
+    id: 7
+    msg: "tftp: file already exists"
+  unknown_user:
+    id: 8
+    msg: "tftp: no such user"

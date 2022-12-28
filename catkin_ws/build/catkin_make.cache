@@ -1,0 +1,2 @@
+pcl_conversions:pcl_ros:perception_pcl:rds_conti_radar_object_list_msgs:rds_foresight_camera_object_list_msgs:rds_msgs:rds_navigation_msgs:rds_perception_msgs:rosbag_to_csv
+-DCATKIN_DEVEL_PREFIX=/home/project/award/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/project/award/catkin_ws/install -G Unix Makefiles

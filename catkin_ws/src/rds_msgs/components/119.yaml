@@ -1,0 +1,20 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  chessboard_detection_failed:
+    id: 1
+    msg: "unable to detect the chessboard with the camera"
+  chessboard_too_far:
+    id: 2
+    msg: "chessboard is too far away from the camera"
+  unable_to_find_a_cluster:
+    id: 3
+    msg: "cannot find a suitable cluster that passes both the plane fit and the rectangle fit"
+  chessboard_overexposed:
+    id: 4
+    msg: "chessboard is overexposed"
+  wrong_chessboard_orientation:
+    id: 5
+    msg: "detection of the chessboard in the lidar and camera data disagrees on the chessboard orientation"

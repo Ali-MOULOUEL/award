@@ -1,0 +1,6 @@
+must_fill_categories: false
+errors:
+  # 0 success
+  invalid_cross_check_status:
+    id: 1
+    msg: "cross-check status is in an inconsistent state"

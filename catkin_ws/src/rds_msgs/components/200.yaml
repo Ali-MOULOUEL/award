@@ -1,0 +1,971 @@
+must_fill_categories: true
+errors:
+  # 0 success
+  emergency_stop_unknown:
+    id: 1
+    msg: "Emergency stop: Unknown"
+    categories: [emergency.unknown, emergency.core_control]
+
+  vehicle_initialization:
+    id: 2
+    msg: "Vehicle initialization ongoing"
+    categories: [emergency.core_control]
+
+  # Triggered if mismatch between EZMove and EZDrive
+  emergency_stop_unrecognized_code:
+    id: 3
+    msg: "Emergency stop: Unrecognized error code"
+    categories: [soft_stop.cco]
+
+  ## OBSTACLES ===============================================================
+  obstacle_detection_unknown:
+    id: 10
+    msg: "Safety chain: LiDAR obstacle detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mrs_front_left_detection:
+    id: 11
+    msg: "Safety chain: MRS Front Left detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mrs_rear_detection:
+    id: 12
+    msg: "Safety chain: MRS Rear detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mrs_front_right_detection:
+    id: 13
+    msg: "Safety chain: MRS Front Right detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mcs_front_left_detection:
+    id: 14
+    msg: "Safety chain: MCS Front Left detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mcs_front_right_detection:
+    id: 15
+    msg: "Safety chain: MCS Front Right detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mcs_rear_right_detection:
+    id: 16
+    msg: "Safety chain: MCS Rear Right detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mcs_rear_left_detection:
+    id: 17
+    msg: "Safety chain: MCS Rear Left detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  obstacle_detection_disabled:
+    id: 19
+    msg: "Emergency stop: Obstacle detection disabled (please activate EZShield and, if needed, Legacy Safety Chain detection)"
+    categories: [emergency.PLC_obstacle_detection]
+
+  scesa_estop:
+    id: 20
+    msg: "Emergency stop: EZShield (SCES-A)"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mrs_rear_left_detection:
+    id: 21
+    msg: "Safety chain: MRS Rear Left detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  mrs_rear_right_detection:
+    id: 22
+    msg: "Safety chain: MRS Rear Right detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  ods_front_left_detection:
+    id: 23
+    msg: "Safety chain: ODS Front Left detection"
+    categories: [emergency.PLC_obstacle_detection]
+  
+  ods_front_right_detection:
+    id: 24
+    msg: "Safety chain: ODS Front Right detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  ods_rear_right_detection:
+    id: 25
+    msg: "Safety chain: ODS Rear Right detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  ods_rear_left_detection:
+    id: 26
+    msg: "Safety chain: ODS Rear Left detection"
+    categories: [emergency.PLC_obstacle_detection]
+
+  ## EBD ===============================================================
+  emergency_stop_ebd_unknown:
+    id: 100
+    msg: "Emergency stop: Unknown (EBD)"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_traction_controller_error:
+    id: 101
+    msg: "Emergency stop: Front Traction Controller error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_soft_stop_too_long:
+    id: 102
+    msg: "Emergency stop: Soft stop too long"
+    categories: [emergency.unknown, emergency.core_control]
+
+  unknown_lidar_issue:
+    id: 110
+    msg: "Safety chain: Unknown LiDAR issue"
+    categories: [emergency.PLC_sensor_issue]
+
+  lidar_front_right_issue:
+    id: 113
+    msg: "Safety chain: LiDAR Front Right not ready"
+    categories: [emergency.PLC_sensor_issue]
+
+  lidar_front_left_issue:
+    id: 114
+    msg: "Safety chain: LiDAR Front Left not ready"
+    categories: [emergency.PLC_sensor_issue]
+
+  lidar_rear_right_issue:
+    id: 115
+    msg: "Safety chain: LiDAR Rear Right not ready"
+    categories: [emergency.PLC_sensor_issue]
+
+  lidar_rear_left_issue:
+    id: 116
+    msg: "Safety chain: LiDAR Rear Left not ready"
+    categories: [emergency.PLC_sensor_issue]
+
+  lidar_rear_issue:
+    id: 117
+    msg: "Safety chain: LiDAR Rear not ready"
+    categories: [emergency.PLC_sensor_issue]
+
+  emergency_stop_mecu_require_estop:
+    id: 120
+    msg: "Emergency stop: Main ECU"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_extra_mecu_require_estop:
+    id: 121
+    msg: "Emergency stop: Extra Main ECU"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_reverse:
+    id: 130
+    msg: "Emergency stop : Reverse mode forbidden"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_service_deceleration_fault:
+    id: 131
+    msg: "Emergency stop: Service deceleration monitoring"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_overspeed_error:
+    id: 132
+    msg: "Emergency stop: Overspeed error (based on command)"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_vehicle_speed_overshoot_error:
+    id: 133
+    msg: "Emergency stop: Platform overspeed error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_required_by_pcn:
+    id: 140
+    msg: "Emergency stop: EZDrive EStop request"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_navigation_pc_heartbeat:
+    id: 141
+    msg: "Emergency stop: EZDrive not ready"
+    categories: [emergency.core_control]
+
+  emergency_stop_command_frame_reception_error:
+    id: 142
+    msg: "Emergency stop: EZDrive command frame reception error"
+    categories: [emergency.core_control]
+
+  emergency_stop_sces_status_reception_error:
+    id: 143
+    msg: "Emergency stop: EZShield status frame reception error"
+    categories: [emergency.core_control]
+
+  emergency_stop_lvc_driver_fallen:
+    id: 144
+    msg: "Emergency stop: LVC driver fallen"
+    categories: [emergency.unknown, emergency.core_control]
+
+  ## SFD ===============================================================
+  emergency_stop_sfd_unknown:
+    id: 200
+    msg: "Emergency stop: Unknown (Safety Fault Detection)"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_vhc_emergency_button_pressed:
+    id: 201
+    msg: "Emergency stop: Emergency button pressed"
+    categories: [emergency.user]
+
+  emergency_stop_vhc_emergency_button_inconsistent:
+    id: 202
+    msg: "Emergency stop: Emergency button signal inconsistency"
+    categories: [emergency.core_control]
+
+  emergency_stop_vhc_emergency_RCU_button_pressed:
+    id: 203
+    msg: "Emergency stop: RCU emergency button pressed"
+    categories: [emergency.user]
+
+  emergency_stop_vhc_emergency_RCU_button_inconsistent:
+    id: 204
+    msg: "Emergency stop: RCU emergency button signal inconsistency"
+    categories: [emergency.core_control]
+
+  emergency_stop_external_device_monitoring_error:
+    id: 210
+    msg: "Emergency stop: Safety relays error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_automanu_button_inconsistency:
+    id: 220
+    msg: "Emergency stop: MANU/AUTO switch button error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_required_by_lvc:
+    id: 221
+    msg: "Emergency stop: LVC health status error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_heartbeat_error:
+    id: 222
+    msg: "Emergency stop: Traction Controller not ready"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_mecu_heartbeat:
+    id: 223
+    msg: "Emergency stop: Main ECU not ready"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_estop_deceleration_fault:
+    id: 224
+    msg: "Emergency stop: EStop Deceleration Failure"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_null_speed_error:
+    id: 225
+    msg: "Emergency stop: Inconsistent null speed information"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_scesA_loss_heartbeat:
+    id: 226
+    msg: "Emergency stop : EZShield (SCES-A ECU) not ready"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_extra_mecu_heartbeat:
+    id: 227
+    msg: "Emergency stop: Extra Main ECU not ready"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_scesB_loss_heartbeat:
+    id: 228
+    msg: "Emergency stop : EZShield (SCES-B ECU) not ready"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_speed_coder_error:
+    id: 230
+    msg: "Emergency stop: Inconsistent speed coders signal"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_steering_controller_error:
+    id: 231
+    msg: "Emergency stop: Front Steering Controller error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_speed_cmd_fbk_inconsistent:
+    id: 232
+    msg: "Emergency stop: Incoherent speed commands and feedback"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_speed_can_analog_fbk_inconsistent:
+    id: 233
+    msg: "Emergency stop: Incoherent speed feedback from CAN and analog"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rear_steering_controller_error:
+    id: 234
+    msg: "Emergency stop: Rear Steering Controller error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_auto:
+    id: 250
+    msg: "Emergency stop: Traction Controller not in auto mode"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_mecu_auto:
+    id: 251
+    msg: "Emergency stop: Main ECU not in auto mode"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_extra_mecu_auto:
+    id: 252
+    msg: "Emergency stop: Extra Main ECU not in auto mode"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ecu_vhc_auto:
+    id: 253
+    msg: "Emergency stop: Vehicle ECU not in auto mode"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_fsc_auto:
+    id: 254
+    msg: "Emergency stop: Front steering controller not in auto mode"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_manuauto_operator_intervention:
+    id: 260
+    msg: "Emergency stop: Unexpected operator intervention"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_inconsistent_weight_configuration:
+    id: 261
+    msg: "Emergency stop: EZMove inconsistent towed load configuration"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_dock_mode_error:
+    id: 270
+    msg: "Emergency stop: Dock mode requested whereas speed is too high"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_trailer_locking_error:
+    id: 275
+    msg: "Emergency stop: Unexpected unlock of the trailer"
+    categories: [emergency.unknown, emergency.core_control, trailer.any]
+
+  emergency_stop_plc_can_input_error:
+    id: 280
+    msg: "Emergency stop: PLC input CAN error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_plc_can_output_error:
+    id: 281
+    msg: "Emergency stop: PLC output CAN error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_reverse_inconsistency:
+    id: 282
+    msg: "Emergency stop: Incoherent way of motion"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_parkbrake_button_released:
+    id: 283
+    msg: "Emergency stop: Park Brake button released"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_pcn_rearm_too_long:
+    id: 284
+    msg: "Emergency stop: Rearming too long"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_parking_brake_state_inconsistent:
+    id: 285
+    msg: "Emergency stop: Parking brake error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_critical_frames_from_pcn_error:
+    id: 291
+    msg: "Emergency stop: Critical frames from EZDrive corrupted"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_critical_frames_from_vhc_error:
+    id: 292
+    msg: "Emergency stop: Critical frames from vehicle corrupted"
+    categories: [emergency.unknown, emergency.core_control]
+
+  ## EZ10 specific 4xx ===============================================================
+  ## Accessories 40x ===============================================================
+  emergency_stop_door_pressure_release_error:
+    id: 400
+    msg: "Emergency stop: Door pressure release button pressed"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_door_opened_driving:
+    id: 401
+    msg: "Emergency stop: Door opened while vehicle is moving"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ramp_unfolded_driving:
+    id: 402
+    msg: "Emergency stop: Ramp deployed while vehicle is moving"
+    categories: [emergency.unknown, emergency.core_control]
+
+    ## ECU monitoring 41x ===============================================================
+  emergency_stop_mecu_heartbeat_error:
+    id: 410
+    msg: "Emergency stop: Main ECU not ready"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_bms_mode_error:
+    id: 411
+    msg: "Emergency stop: 48V battery system error"
+    categories: [emergency.unknown, emergency.core_control]
+
+    ## Traction 42x ===============================================================
+  emergency_stop_rear_traction_controller_error:
+    id: 420
+    msg: "Emergency stop: Rear Traction Controller error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_traction_controller_blocked:
+    id: 421
+    msg: "Emergency stop: Front Traction Controller blocked mode"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rear_traction_controller_blocked:
+    id: 422
+    msg: "Emergency stop: Rear Traction Controller blocked mode"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_reconfiguration_request:
+    id: 423
+    msg: "Emergency stop: Traction Controllers reconfiguration requested"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_traction_controller_single:
+    id: 424
+    msg: "Emergency stop: Front Traction Controller requesting to reset to single drive"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_traction_controller_front_gearbox_error:
+    id: 425
+    msg: "Emergency stop: Front Traction Controller Front Gearbox error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_traction_controller_rear_gearbox_error:
+    id: 426
+    msg: "Emergency stop: Front Traction Controller Rear Gearbox error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_traction_controller_fsb_inconsistency:
+    id: 427
+    msg: "Emergency stop: Front Traction Controller FSB inconsistency"
+    categories: [emergency.unknown, emergency.core_control]
+
+    ## Steering 43x-44x ===============================================================
+  emergency_stop_ftc_front_steering_controller_error:
+    id: 430
+    msg: "Emergency stop: Front Steering Controller error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_rear_steering_controller_error:
+    id: 431
+    msg: "Emergency stop: Rear Steering Controller error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_front_steering_controller_emergency_action:
+    id: 432
+    msg: "Emergency stop: Front Steering Controller shutdown requested to FTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_rear_steering_controller_emergency_action:
+    id: 433
+    msg: "Emergency stop: Rear Steering Controller shutdown requested to FTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_steering_controller_emergency_frame:
+    id: 434
+    msg: "Emergency stop: Front Steering Controller error detected by RTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rear_steering_controller_emergency_frame:
+    id: 435
+    msg: "Emergency stop: Rear Steering Controller error detected by RTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_steering_command_variation_error:
+    id: 436
+    msg: "Emergency stop: Steering command variation error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_steering_measure_variation_error:
+    id: 437
+    msg: "Emergency stop: Steering measure variation error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rtc_front_steering_controller_emergency_action:
+    id: 438
+    msg: "Emergency stop: Front Steering Controller shutdown requested to RTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rtc_rear_steering_controller_emergency_action:
+    id: 439
+    msg: "Emergency stop: Rear Steering Controller shutdown requested to RTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+    ## Braking 45x-46x ===============================================================
+  emergency_stop_hydraulic_init_missing:
+    id: 450
+    msg: "Emergency stop: Hydraulic braking system initialization not completed"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_hydraulic_bleeding_mode_active:
+    id: 451
+    msg: "Emergency stop: Hydraulic braking system bleeding mode active"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_hydraulic_init_error:
+    id: 452
+    msg: "Emergency stop: Hydraulic braking system initialization error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_fsb_error_stopped:
+    id: 455
+    msg: "Emergency stop: FSB not activated after stopping or vehicle movement requested but not observed after 3 tries"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_fsb_error_moving:
+    id: 456
+    msg: "Emergency stop: Front FSB engaged while vehicle is moving"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rear_fsb_error_moving:
+    id: 457
+    msg: "Emergency stop: Rear FSB engaged while vehicle is moving"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_park_failure:
+    id: 458
+    msg: "Emergency stop: Unexpected vehicle movement when parked"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_elb_init_error:
+    id: 460
+    msg: "Emergency stop: ELB initialization error"
+    categories: [emergency.unknown, emergency.core_control]
+
+    ## Electrical monitoring 47x ===============================================================
+  emergency_stop_front_ksi_relay_error:
+    id: 470
+    msg: "Emergency stop: Front KSI command relay error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rear_ksi_relay_error:
+    id: 471
+    msg: "Emergency stop: Rear KSI command relay error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_front_kvar_relay_error:
+    id: 472
+    msg: "Emergency stop: Front KVAR command relay error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rear_kvar_relay_error:
+    id: 473
+    msg: "Emergency stop: Rear KVAR command relay error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ue11_relay_error:
+    id: 474
+    msg: "Emergency stop: UE11 command relay error"
+    categories: [emergency.unknown, emergency.core_control]
+
+    ## Communications 48x-49x ===============================================================
+  emergency_stop_ftc_pcn_com_error:
+    id: 480
+    msg: "Emergency stop: Communication error between FTC and EZDrive"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_plc_com_error:
+    id: 481
+    msg: "Emergency stop: Communication error between FTC and PLC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_mecu_com_error:
+    id: 482
+    msg: "Emergency stop: Communication error between FTC and Main ECU"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_bms_com_error:
+    id: 483
+    msg: "Emergency stop: Communication error between FTC and 48V battery system"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_rtc_com_error:
+    id: 484
+    msg: "Emergency stop: Communication error between FTC and RTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_fsc_com_error:
+    id: 485
+    msg: "Emergency stop: Communication error between FTC and FSC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_rsc_com_error:
+    id: 486
+    msg: "Emergency stop: Communication error between FTC and RSC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rtc_fsc_com_error:
+    id: 487
+    msg: "Emergency stop: Communication error between RTC and FSC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rtc_rsc_com_error:
+    id: 488
+    msg: "Emergency stop: Communication error between RTC and RSC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rtc_ftc_com_error:
+    id: 489
+    msg: "Emergency stop: Communication error between RTC and FTC"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_rtc_mecu_com_error:
+    id: 490
+    msg: "Emergency stop: Communication error between RTC and Main ECU"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_ftc_plc_canopen_error:
+    id: 491
+    msg: "Emergency stop: PLC CAN error"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_mecu_canopen_error:
+    id: 492
+    msg: "Emergency stop: PLC, RCU, FSC or RSC error detected by Main ECU"
+    categories: [emergency.unknown, emergency.core_control]
+
+  emergency_stop_mecu_can_heartbeat_error:
+    id: 493
+    msg: "Emergency stop: CAN heartbeat frames error detected by Main ECU"
+    categories: [emergency.unknown, emergency.core_control]
+
+  ## SOFT STOP ===============================================================
+
+  soft_stop_unknown:
+    id: 2001
+    msg: "Vehicle stopped: Unknown platform cause"
+    categories: [soft_stop.cco]
+
+  # Triggered if mismatch between EZMove and EZDrive
+  soft_stop_unrecognized_code:
+    id: 2002
+    msg: "Vehicle stopped: Unrecognized error code"
+    categories: [soft_stop.cco]
+
+  ## Accessories 201x ===============================================================
+  sstop_doors_opened:
+    id: 2010
+    msg: "Vehicle stopped: Doors not closed while movement requested"
+    categories: [soft_stop.cco]
+
+  sstop_ramp_unfolded:
+    id: 2011
+    msg: "Vehicle stopped: Ramp not stowed while movement requested"
+    categories: [soft_stop.cco]
+
+  sstop_5th_wheel_error:
+    id: 2012
+    msg: "Vehicle stopped: 5th wheel control error"
+    categories: [soft_stop.cco]
+
+  sstop_accesories_not_operational:
+    id: 2013
+    msg: "Vehicle stopped: Malfunction on the vehicule accessories"
+    categories: [soft_stop.cco]
+
+  ## Miscellaneous 202x ===============================================================
+  sstop_vehicle_overload:
+    id: 2020
+    msg: "Vehicle stopped: Weight overload error"
+    categories: [soft_stop.cco]
+
+  sstop_auto_mode_inconsistency:
+    id: 2021
+    msg: "Vehicle stopped: Vehicle mode inconsistency"
+    categories: [soft_stop.cco]
+
+  sstop_loading_mode:
+    id: 2022
+    msg: "Vehicle stopped: Loading mode requested while vehicle in Auto mode"
+    categories: [soft_stop.cco]
+
+  sstop_vehicle_shutdown:
+    id: 2023
+    msg: "Vehicle stopped: Vehicle shutting down"
+    categories: [soft_stop.cco]
+
+  sstop_charge_plug:
+    id: 2024
+    msg: "Vehicle stopped: Charging plug still connected"
+    categories: [soft_stop.cco]
+
+  sstop_towing_mode:
+    id: 2025
+    msg: "Vehicle stopped: Towing mode request while vehicle in Auto mode"
+    categories: [soft_stop.cco]
+
+  sstop_sw_version_inconsistency:
+    id: 2026
+    msg: "Vehicle stopped: EZMove ECUs configuration inconsistency"
+    categories: [soft_stop.cco]
+
+  sstop_required_by_pcn:
+    id: 2027
+    msg: "Vehicle stop: EZDrive SStop request"
+    categories: [soft_stop.cco]
+
+  sstop_belt_error:
+    id: 2028
+    msg: "Vehicle stopped: Belt error"
+    categories: [soft_stop.cco]
+
+  sstop_command_frame_crc_error:
+    id: 2029
+    msg: "Vehicle stopped: EZDrive command frame CRC error"
+    categories: [soft_stop.cco]
+
+  sstop_command_frame_sequence_counter_error:
+    id: 2030
+    msg: "Vehicle stopped: EZDrive command frame sequence counter error"
+    categories: [soft_stop.cco]
+
+  sstop_stops_frame_crc_error:
+    id: 2031
+    msg: "Vehicle stopped: EZDrive stops frame CRC error"
+    categories: [soft_stop.cco]
+
+  sstop_stops_frame_sequence_counter_error:
+    id: 2032
+    msg: "Vehicle stopped: EZDrive stops frame sequence counter error"
+    categories: [soft_stop.cco]
+
+  sstop_sces_status_crc_error:
+    id: 2033
+    msg: "Vehicle stopped: EZShield status frame CRC error"
+    categories: [soft_stop.cco]
+
+  sstop_sces_status_sequence_counter_error:
+    id: 2034
+    msg: "Vehicle stopped: EZShield status frame sequence counter error"
+    categories: [soft_stop.cco]
+
+  sstop_5th_wheel_height_error_with_trailer:
+    id: 2035
+    msg: "Vehicle stopped: 5th wheel position not allowed"
+    categories: [soft_stop.cco, trailer.any]
+
+  sstop_handling_command_frame_crc_error:
+    id: 2036
+    msg: "Vehicle stopped: EZDrive handling command frame CRC error"
+    categories: [soft_stop.cco]
+
+  sstop_handling_command_frame_sequence_counter_error:
+    id: 2037
+    msg: "Vehicle stopped: EZDrive handling command frame sequence counter error"
+    categories: [soft_stop.cco]
+
+  sstop_vhc_mode_selector_feedback_inconsistency:
+    id: 2038
+    msg: "Vehicle stopped: Vehicle mode selector feedback inconsistency"
+    categories: [soft_stop.cco]
+
+  sstop_vhc_mode_transition:
+    id: 2039
+    msg: "Vehicle stopped: Vehicle transitioning from Auto mode to Manu mode or Manu mode to Auto mode"
+    categories: [soft_stop.cco]
+
+  ## ECU monitoring 204x ===============================================================
+  sstop_front_traction_controller:
+    id: 2040
+    msg: "Vehicle stopped: FTC soft stop request"
+    categories: [soft_stop.cco]
+
+  sstop_out_of_range_rcu_command:
+    id: 2041
+    msg: "Vehicle stopped: Out of range speed command by RCU"
+    categories: [soft_stop.cco]
+
+  sstop_front_sces_controller:
+    id: 2042
+    msg: "Vehicle stopped: EZShield soft stop request (SCES-A ECU)"
+    categories: [soft_stop.sces_A]
+
+  sstop_rear_sces_controller:
+    id: 2043
+    msg: "Vehicle stopped: EZShield soft stop request (SCES-B ECU)"
+    categories: [soft_stop.sces_B]
+
+  sstop_main_ecu_controller:
+    id: 2044
+    msg: "Vehicle stopped: Main ECU soft stop request"
+    categories: [soft_stop.cco]
+
+  sstop_extra_main_ecu_controller:
+    id: 2045
+    msg: "Vehicle stopped: Extra Main ECU soft stop request"
+    categories: [soft_stop.cco]
+
+  ## Miscellaneous 205x ===============================================================
+
+  sstop_command_frame_timeout_error:
+    id: 2050
+    msg: "Vehicle stopped: EZDrive command frame timeout error"
+    categories: [soft_stop.cco]
+
+  sstop_stops_frame_timeout_error:
+    id: 2051
+    msg: "Vehicle stopped: EZDrive stops frame timeout error"
+    categories: [soft_stop.cco]
+
+  sstop_sces_status_timeout_error:
+    id: 2052
+    msg: "Vehicle stopped: EZShield status frame timeout error"
+    categories: [soft_stop.cco]
+
+  sstop_handling_command_frame_timeout_error:
+    id: 2053
+    msg: "Vehicle stopped: EZDrive handling command frame timeout error"
+    categories: [soft_stop.cco]
+
+  ## Traction 206x ===============================================================
+  sstop_out_of_range_fwdspeed_command:
+    id: 2060
+    msg: "Vehicle stopped: Out of range speed command by EZDrive"
+    categories: [soft_stop.cco]
+
+  sstop_out_of_range_accel_command:
+    id: 2061
+    msg: "Vehicle stopped: Out of range acceleration command by EZDrive"
+    categories: [soft_stop.cco]
+
+  sstop_out_of_range_decel_command:
+    id: 2062
+    msg: "Vehicle stopped: Out of range deceleration command by EZDrive"
+    categories: [soft_stop.cco]
+
+  sstop_out_of_range_reverse_command:
+    id: 2063
+    msg: "Vehicle stopped: Out of range reverse speed by EZDrive"
+    categories: [soft_stop.cco]
+
+  sstop_single_drive_auto:
+    id: 2064
+    msg: "Vehicle stopped: Single drive configuration in Auto mode"
+    categories: [soft_stop.cco]
+
+  sstop_reverse_inconsistency:
+    id: 2065
+    msg: "Vehicle stopped: Wheels movement and speed command directions inconsistency"
+    categories: [soft_stop.cco]
+
+  sstop_wheel_speed_overshoot:
+    id: 2066
+    msg: "Vehicle stopped: Wheels movement and motor or speed command inconsistency"
+    categories: [soft_stop.cco]
+
+  ## Steering 208x ===============================================================
+  sstop_out_of_range_front_steering_command:
+    id: 2080
+    msg: "Vehicle stopped: Out of range front axle steering command by EZDrive"
+    categories: [soft_stop.cco]
+
+  sstop_out_of_range_rear_steering_command:
+    id: 2081
+    msg: "Vehicle stopped: Out of range rear axle steering command by EZDrive"
+    categories: [soft_stop.cco]
+
+  sstop_steering_sign_inconsistency:
+    id: 2082
+    msg: "Vehicle stopped: Front/rear axle steering command by EZDrive inconsistency"
+    categories: [soft_stop.cco]
+    
+  sstop_FTC_steer_feedback_inconsistency:
+    id: 2083
+    msg: "Vehicle stopped: The FTC detected an inconsistency between the front and rear steering axle’s position feedback"
+    categories: [soft_stop.cco]
+
+  sstop_RTC_steer_feedback_inconsistency:
+    id: 2084
+    msg: "Vehicle stopped: The RTC detected an inconsistency between the front and rear steering axle’s position feedback"
+    categories: [soft_stop.cco]
+
+  ## Braking 209x ===============================================================
+  sstop_standstill_front_fsb:
+    id: 2090
+    msg: "Vehicle stopped: Front FSB released but vehicle not moving"
+    categories: [soft_stop.cco]
+
+  sstop_standstill_rear_fsb:
+    id: 2091
+    msg: "Vehicle stopped: Rear FSB released but vehicle not moving"
+    categories: [soft_stop.cco]
+
+  sstop_hydrau_config_inconsistency:
+    id: 2092
+    msg: "Vehicle stopped: Hydraulic braking system configuration inconsistency between PLC and Main ECU"
+    categories: [soft_stop.cco]
+
+  sstop_front_fsb_cmd_inconsistency:
+    id: 2093
+    msg: "Vehicle stopped: Front FSB command and status inconsistency"
+    categories: [soft_stop.cco]
+
+  sstop_rear_fsb_cmd_inconsistency:
+    id: 2094
+    msg: "Vehicle stopped: Rear FSB command and status inconsistency"
+    categories: [soft_stop.cco]
+
+  sstop_elb_cmd_inconsistency:
+    id: 2095
+    msg: "Vehicle stopped: ELB command and status inconsistency"
+    categories: [soft_stop.cco]
+
+  sstop_elb_monitoring:
+    id: 2096
+    msg: "Vehicle stopped: ELB monitoring error"
+    categories: [soft_stop.cco]
+
+  ## Electrical monitoring 211x ===============================================================
+  sstop_front_fsb_relay:
+    id: 2110
+    msg: "Vehicle stopped: Front FSB relay error"
+    categories: [soft_stop.cco]
+
+  sstop_rear_fsb_relay:
+    id: 2111
+    msg: "Vehicle stopped: Rear FSB relay error"
+    categories: [soft_stop.cco]
+
+  sstop_front_left_elb_relay:
+    id: 2112
+    msg: "Vehicle stopped: Front Left ELB relay error"
+    categories: [soft_stop.cco]
+
+  sstop_front_right_elb_relay:
+    id: 2113
+    msg: "Vehicle stopped: Front Right ELB relay error"
+    categories: [soft_stop.cco]
+
+  sstop_rear_left_elb_relay:
+    id: 2114
+    msg: "Vehicle stopped: Rear Left ELB relay error"
+    categories: [soft_stop.cco]
+
+  sstop_rear_right_elb_relay:
+    id: 2115
+    msg: "Vehicle stopped: Rear Right ELB relay error"
+    categories: [soft_stop.cco]
+
+  sstop_low_battery:
+    id: 2116
+    msg: "Vehicle stopped: 48V battery's state of charge is too low for Auto mode operations"
+    categories: [soft_stop.cco]
+
+  sstop_elb_fuse_blown:
+    id: 2117
+    msg: "Vehicle stopped: ELB fuse monitoring error"
+    categories: [soft_stop.cco]

@@ -1,0 +1,5 @@
+uint8 STATE_ACTIVE = 0
+uint8 STATE_DISABLED = 1
+uint8 STATE_FAILSOFT = 2
+
+uint8 state

@@ -1,0 +1,22 @@
+digraph G {
+"world" -> "vehicle_continuous"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 100.202 Hz\nMost recent transform: 1661506717.828 ( 861252.735 sec old)\nBuffer length: 4.990 sec\n"];
+"world" -> "vehicle"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 100.201 Hz\nMost recent transform: 1661506717.828 ( 861252.735 sec old)\nBuffer length: 5.000 sec\n"];
+"world" -> "mcs_loc_horiz"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 25.704 Hz\nMost recent transform: 1661506717.778 ( 861252.785 sec old)\nBuffer length: 4.980 sec\n"];
+"world" -> "vlp32_loc_horiz"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.203 Hz\nMost recent transform: 1661506717.687 ( 861252.875 sec old)\nBuffer length: 4.999 sec\n"];
+"world" -> "mrs_loc_horiz"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 12.705 Hz\nMost recent transform: 1661506717.725 ( 861252.838 sec old)\nBuffer length: 5.037 sec\n"];
+"vehicle" -> "camera_front"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "gps"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "imu"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "mcs_front_left"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "mcs_loc"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "mrs_front_right"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "mrs_loc"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "odom"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "vlp16_front_near"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "vlp32_front"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+"vehicle" -> "vlp32_loc"[label="Broadcaster: /play_1662367822646222533\nAverage rate: 10.200 Hz\nMost recent transform: 1661506717.924 ( 861252.639 sec old)\nBuffer length: 5.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1662367970.563"[ shape=plaintext ] ;
+ }->"world";
+}

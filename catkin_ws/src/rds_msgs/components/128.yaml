@@ -1,0 +1,17 @@
+must_fill_categories: false
+errors:
+  data_loading_error:
+    id: 1
+    msg: "data upload: error loading data from disk"
+  remote_error:
+    id: 2
+    msg: "data upload: remote server returned an error"
+  network_error:
+    id: 3
+    msg: "data upload: network error"
+  not_on_wifi:
+    id: 4
+    msg: "data upload: not connected to wifi network"
+  data_querying_error:
+    id: 5
+    msg: "data upload: error querying data from disk"

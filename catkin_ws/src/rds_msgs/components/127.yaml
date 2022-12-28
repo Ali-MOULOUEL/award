@@ -1,0 +1,33 @@
+must_fill_categories: false
+errors:
+  ok:
+    id: 0
+    msg: "ok"
+  # Autowiesel project
+  invalid_goal:
+    id: 1
+    msg: "the goal received is not ok"
+  connexion_lost:
+    id: 2
+    msg: "the connexion is lost"
+  too_much_outlier:
+    id: 3
+    msg: "the outlier rate is very high"
+    categories:
+      [kamag_maneuver.warning, kamag_maneuver.swap_body_not_displayable]
+  too_high_covariance:
+    id: 4
+    msg: "the covariance of swap body position is too high"
+    categories: [kamag_maneuver.critical]
+  # Deprecate Perception::too_many_legs. This error has become useless
+  # Do not reuse this id
+  #
+  # too_many_legs: 5
+  too_high_yaw:
+    id: 6
+    msg: "the yaw angle between the parking spot and the swap body is too high"
+    categories: [kamag_maneuver.critical]
+  swap_body_outside:
+    id: 7
+    msg: "the swap body is outside the parking spot"
+    categories: [kamag_maneuver.critical]

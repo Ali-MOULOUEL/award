@@ -1,0 +1,134 @@
+{
+    "fileVersion": "v1.0",
+    "Date": "20210913_184237",
+    "Frames": [
+    {
+        "FrameIndex": 211997,
+        "Sensor": "Ir ",
+        "FrameTime": 1657188051.816275 , 
+        "Obstacles": [
+        
+            {
+            "BoundBox": {
+            "BottomRightX": 639,
+            "BottomRightY": 504,
+            "TopLeftX": 144,
+            "TopLeftY": 52
+            },
+        "CenterX": 391,
+        "CenterY": 278,
+        "Class": "Truck",
+        "DangerLevel": 0,
+        "Distance": -1.00,
+        "ID": 529,
+        "OnPath": false,
+        "OnRoad": true,
+        "PositionX": -0.06,
+        "PositionY": 0.48,
+        "PositionZ": -0.97,
+        "RealHeight": -0.35,
+        "RealWidth": -0.44,
+        "RelativeSpeed": 0.00,
+        "Score": 0.88,
+        "TTC": 1000.00
+        }
+        ]
+        }
+    ,{
+        "FrameIndex": 211997,
+        "Sensor": "Vis",
+        "FrameTime": 1657188052.826763 , 
+        "Obstacles": [
+        
+         {
+         "BoundBox": {
+         "BottomRightX": 1158,
+         "BottomRightY": 702,
+         "TopLeftX": 312,
+         "TopLeftY": 152
+         },
+        "CenterX": 735,
+        "CenterY": 427,
+        "Class": "Car",
+        "DangerLevel": 0,
+        "Distance": 4.16,
+        "ID": 5996,
+        "OnPath": false,
+        "OnRoad": true,
+        "PositionX": 0.19,
+        "PositionY": -1.68,
+        "PositionZ": 4.07,
+        "RealHeight": 1.05,
+        "RealWidth": 1.71,
+        "RelativeSpeed": -0.12,
+        "Score": 0.59,
+        "TTC": 35.57
+        }
+        ]
+    }
+    ,{
+        "FrameIndex": 211998,
+        "Sensor": "Vis",
+        "FrameTime": 1657188053.860024 , 
+        "Obstacles": [
+        
+         {
+         "BoundBox": {
+         "BottomRightX": 1158,
+         "BottomRightY": 702,
+         "TopLeftX": 312,
+         "TopLeftY": 150
+         },
+        "CenterX": 735,
+        "CenterY": 426,
+        "Class": "Car",
+        "DangerLevel": 0,
+        "Distance": 4.45,
+        "ID": 5996,
+        "OnPath": false,
+        "OnRoad": true,
+        "PositionX": 0.20,
+        "PositionY": -1.80,
+        "PositionZ": 4.35,
+        "RealHeight": 1.12,
+        "RealWidth": 1.82,
+        "RelativeSpeed": 0.65,
+        "Score": 0.59,
+        "TTC": 35.50
+        }
+    ]
+},
+    {
+        "FrameIndex": 211998,
+        "Sensor": "Vis",
+        "FrameTime": 1757188054.98764 , 
+        "Obstacles": [
+        
+         {
+         "BoundBox": {
+         "BottomRightX": 1158,
+         "BottomRightY": 702,
+         "TopLeftX": 312,
+         "TopLeftY": 150
+         },
+        "CenterX": 735,
+        "CenterY": 426,
+        "Class": "Car",
+        "DangerLevel": 0,
+        "Distance": 4.45,
+        "ID": 5996,
+        "OnPath": false,
+        "OnRoad": true,
+        "PositionX": 0.20,
+        "PositionY": -1.80,
+        "PositionZ": 4.35,
+        "RealHeight": 1.12,
+        "RealWidth": 1.82,
+        "RelativeSpeed": 0.67,
+        "Score": 0.59,
+        "TTC": 35.50
+        }
+    ]
+}
+    ]
+}

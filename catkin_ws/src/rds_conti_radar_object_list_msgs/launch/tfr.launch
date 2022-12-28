@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="continental_broadcaster" args="1 0 0.4 0.1 0 0.258819 0.9659258 vlp32_front continental 100" />
+</launch>

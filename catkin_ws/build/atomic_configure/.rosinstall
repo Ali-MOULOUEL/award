@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/project/award/catkin_ws/devel/setup.sh
